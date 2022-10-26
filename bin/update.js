@@ -5,6 +5,10 @@ import { downloadMod } from './downloadmod.js';
 
 export async function updateMods(version){
 	if(getConfigValue("version") == version) return console.log(chalk.yellow("Nothing changed. Already using that version."));
+
+	if(!fs.existsSync(`${getConfigValue("modDir")}\\fmm-unused`)){
+		fs.mkdirSync(`${getConfigValue("modDir")}\\fmm-unused`);
+	}
 	
 	setConfigValue({fabricVersion: version});
 

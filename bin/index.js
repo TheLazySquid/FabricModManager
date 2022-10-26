@@ -10,7 +10,7 @@ import inquirer from 'inquirer';
 import {getFabricVersions} from './files.js';
 import { updateMods } from './update.js';
 
-const rl = readline.createInterface({
+export const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout
 });
@@ -58,7 +58,7 @@ yargs(hideBin(process.argv))
 	handler: async () => {
 		console.log(chalk.bold("Welcome to Fabric Mod Manager setup!"));
 		console.log("To begin, you need to obtain a curseforge api key.")
-		let answer = await rl.question(`Go to ${chalk.underline("https://console.curseforge.com/#/api-keys")} and paste your key below. (you may need to hit ctrl+shift+v)\n`);
+		let answer = await rl.question(`Go to ${chalk.underline("https://console.curseforge.com/#/api-keys")} and paste your key below. (you may need to hit ctrl+shift+v or right click)\n`);
 		if(answer) setConfigValue({curseforgeKey: answer});
 		
 		answer = await rl.question(`What directory would you like to download mods to? (Leave blank for ${process.env.APPDATA}\\.minecraft\\mods)\n`)

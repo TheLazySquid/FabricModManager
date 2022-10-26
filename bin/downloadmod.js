@@ -3,12 +3,7 @@ import {CurseForgeClient, CurseForgeGameEnum, CurseForgeModLoaderType} from 'cur
 import fs from 'fs';
 import { getConfigValue, addMod } from './config.js';
 import chalk from 'chalk';
-import readline from 'node:readline/promises';
-
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout
-});
+import { rl } from './index.js';
 
 let curseforgeKey = getConfigValue("curseforgeKey");
 var client;
@@ -24,7 +19,7 @@ export async function downloadMod(slug, modName){
 
 	let mod;
 	if(!isNaN(parseInt(slug))){
-		if(modName) console.log(chalk.bold(`Downloading ${modName} for Minecraft ${getConfigValue("mcVersion")}`));
+		if(modName) console.log(`Downloading ${modName} for Minecraft ${getConfigValue("fabricVersion")}`);
 		else console.log("Downloading mod by id: " + slug);
 		try{
 			mod = await client.getMod(parseInt(slug));
