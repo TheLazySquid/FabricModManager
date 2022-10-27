@@ -8,7 +8,7 @@ import * as readline from 'node:readline/promises';
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import {getFabricVersions} from './files.js';
-import { updateMods } from './update.js';
+import { updateMods, updateModDir } from './update.js';
 
 export const rl = readline.createInterface({
 	input: process.stdin,
@@ -28,7 +28,7 @@ yargs(hideBin(process.argv))
 	},
 	handler: (argv) => {
 		if(argv.dir){
-			setConfigValue({modDir: argv.dir});
+			updateModDir(argv.dir)
 		}
 		else console.log(`Current mod directory: ${getConfigValue("modDir")}`);
 		process.exit();
@@ -63,7 +63,7 @@ yargs(hideBin(process.argv))
 		
 		answer = await rl.question(`What directory would you like to download mods to? (Leave blank for ${process.env.APPDATA}\\.minecraft\\mods)\n`)
 		|| `${process.env.APPDATA}\\.minecraft\\mods`;
-		setConfigValue({modDir: answer});
+		updateModDir(answer);
 
 		// search for fabric versions
 		let versions = getFabricVersions();
@@ -125,6 +125,14 @@ yargs(hideBin(process.argv))
 		}else{
 			console.log("You need to specify a key with --key!");
 		}
+		process.exit();
+	}
+})
+.command({
+	command: "list",
+	describe: "List all installed mods",
+	handler: async () => {
+		console.table(getConfigValue("mods"));
 		process.exit();
 	}
 })

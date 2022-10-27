@@ -47,3 +47,25 @@ export async function updateMods(version){
 	}
 	setConfigValue({mods});
 }
+
+export async function updateModDir(directory){
+	if(!fs.existsSync(directory)) return console.log(chalk.red("That directory does not exist."));
+	// move old mods to new folder
+	if(!fs.existsSync(`${directory}\\fmm-unused`)){
+		fs.mkdirSync(`${directory}\\fmm-unused`);
+	}
+	let mods = getConfigValue("mods");
+	let oldModDir = getConfigValue("modDir");
+	for(let mod of mods){
+		if(fs.existsSync(`${oldModDir}\\${mod.fileName}`)){
+			fs.renameSync(`${oldModDir}\\${mod.fileName}`, `${directory}\\${mod.fileName}`);
+		}
+		for(let alt of mod.altversions){
+			if(fs.existsSync(`${oldModDir}\\fmm-unused\\${alt.fileName}`)){
+				fs.renameSync(`${oldModDir}\\fmm-unused\\${alt.fileName}`, `${directory}\\fmm-unused\\${alt.fileName}`);
+			}
+		}
+	}
+	setConfigValue({modDir: directory});
+	console.log(chalk.green("Moved old mods to new folder."));
+}
