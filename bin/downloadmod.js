@@ -58,8 +58,8 @@ export async function downloadMod(slug, modName){
 
 	// Check if the mod is already installed
 	const currentMods = fs.readdirSync(getConfigValue("modDir"));
-	if(currentMods.includes(file.displayName)){
-		const answer = rl.question(chalk.yellow("Mod already downloaded, redownload? (y/N)"));
+	if(currentMods.includes(file.fileName)){
+		const answer = await rl.question(chalk.yellow("Mod already downloaded, redownload? (y/N)"));
 		if(answer.toLowerCase() != "y") return;
 		return;
 	}
@@ -68,16 +68,16 @@ export async function downloadMod(slug, modName){
 	const downloadUrl = file.downloadUrl;
 	const modfile = await fetch(downloadUrl);
 	let modFolder = getConfigValue("modDir") || `${process.env.APPDATA}\\.minecraft\\mods`;
-	const fileStream = fs.createWriteStream(`${modFolder}\\${file.displayName}`);
+	const fileStream = fs.createWriteStream(`${modFolder}\\${file.fileName}`);
 	await new Promise((resolve, reject) => {
 		modfile.body.pipe(fileStream);
 		modfile.body.on("error", () => {
-			console.log(chalk.red(`Error downloading mod: ${file.displayName}`));
+			console.log(chalk.red(`Error downloading mod: ${file.fileName}`));
 			reject();
 		});
 		fileStream.on("finish", () => {
-			console.log(chalk.green(`Downloaded mod ${file.displayName}`));
-			addMod(mod.id, getConfigValue("fabricVersion"), file.displayName, mod.name);
+			console.log(chalk.green(`Downloaded mod ${file.fileName}`));
+			addMod(mod.id, getConfigValue("fabricVersion"), file.fileName, mod.name);
 			resolve();
 		});
 	});
