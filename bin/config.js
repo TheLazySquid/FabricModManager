@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join} from 'path';
 
 const configFile = join(dirname(fileURLToPath(import.meta.url)), "../") + "\\fmmconfig.json";
+if(!fs.existsSync(configFile)) fs.writeFileSync(configFile, "{}");
 
 export function setConfigValue(value){
 	const config = fs.readFileSync(configFile, 'utf8') || "{}";
