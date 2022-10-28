@@ -36,7 +36,7 @@ export function getConfigValue(key){
 	return configJson[key];
 }
 
-export function addMod(modID, version, fileName, modName){
+export function addMod(modID, version, fileName, modName, modSlug, modsObject){
 	const config = fs.readFileSync(configFile, 'utf8') || "{}";
 	var configJson = JSON.parse(config);
 	if(!configJson.mods) configJson.mods = [];
@@ -45,8 +45,9 @@ export function addMod(modID, version, fileName, modName){
 		configJson.mods[modIndex].version = version;
 		configJson.mods[modIndex].fileName = fileName;
 	}else{
-		configJson.mods.push({modID, version, fileName, modName});
+		configJson.mods.push({modID, version, fileName, modName, modSlug});
 	}
 	// save the config
-	fs.writeFileSync(configFile, JSON.stringify(configJson, null, 4));
+	if(modsObject) modsObject = configJson.mods;
+	else fs.writeFileSync(configFile, JSON.stringify(configJson, null, 4));
 }

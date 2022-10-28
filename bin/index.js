@@ -3,12 +3,13 @@
 import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
 import {setConfigValue, getConfigValue} from './config.js';
-import {downloadMod} from './downloadmod.js';
+import {downloadMod, uninstallMod} from './downloadmod.js';
 import * as readline from 'node:readline/promises';
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import {getFabricVersions} from './files.js';
 import { updateMods, updateModDir } from './update.js';
+import fs from 'fs';
 
 export const rl = readline.createInterface({
 	input: process.stdin,
@@ -35,18 +36,36 @@ yargs(hideBin(process.argv))
 	}
 })
 .command({
-	command: "download",
-	describe: "Download a mod",
+	command: "install",
+	describe: "Install a mod",
 	builder: {
 		query: {
 			type: "string",
-			describe: "The name/id of the mod to download",
+			describe: "The name/id of the mod to install",
 			alias: "q"
 		}
 	},
 	handler: async (argv) => {
 		if(argv.query){
-			await downloadMod(argv.query.replaceAll(" ", "-"));
+			await downloadMod(argv.query.replaceAll(" ", "-"), {});
+		}
+		else console.log("No search term or id provided");
+		process.exit();
+	}
+})
+.command({
+	command: "uninstall",
+	describe: "Uninstall a mod",
+	builder: {
+		query: {
+			type: "string",
+			describe: "The name/id of the mod to uninstall",
+			alias: "q"
+		}
+	},
+	handler: async (argv) => {
+		if(argv.query){
+			await uninstallMod(argv.query.replaceAll(" ", "-"));
 		}
 		else console.log("No search term or id provided");
 		process.exit();
@@ -133,6 +152,31 @@ yargs(hideBin(process.argv))
 	describe: "List all installed mods",
 	handler: async () => {
 		console.table(getConfigValue("mods"));
+		process.exit();
+	}
+})
+.command({
+	command: "reinstall",
+	describe: "Reinstall all missing mods",
+	builder: {
+		force: {
+			type: "boolean",
+			describe: "Reinstall mods that already exist",
+			alias: "f"
+		}
+	},
+	handler: async (argv) => {
+		let mods = getConfigValue("mods");
+		let moddir = getConfigValue("modDir");
+		let redownloadedMods = 0;
+		for(let mod of mods){
+			// check if mod exists
+			if(!fs.existsSync(`${moddir}\\${mod.fileName}`) || argv.force){
+				await downloadMod(mod.modID, {force: argv.force});
+				redownloadedMods++;
+			}
+		}
+		console.log(chalk.green(`Redownloaded ${redownloadedMods} mods`));
 		process.exit();
 	}
 })

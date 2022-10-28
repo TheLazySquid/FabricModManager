@@ -5,9 +5,10 @@ import { downloadMod } from './downloadmod.js';
 
 export async function updateMods(version){
 	if(getConfigValue("version") == version) return console.log(chalk.yellow("Nothing changed. Already using that version."));
+	let modDir = getConfigValue("modDir");
 
-	if(!fs.existsSync(`${getConfigValue("modDir")}\\fmm-unused`)){
-		fs.mkdirSync(`${getConfigValue("modDir")}\\fmm-unused`);
+	if(!fs.existsSync(`${modDir}\\fmm-unused`)){
+		fs.mkdirSync(`${modDir}\\fmm-unused`);
 	}
 	
 	setConfigValue({fabricVersion: version});
@@ -17,8 +18,8 @@ export async function updateMods(version){
 		mod.altversions = mod.altversions || [];
 
 		// move old mod to old folder
-		if(fs.existsSync(`${getConfigValue("modDir")}\\${mod.fileName}`)){
-			fs.renameSync(`${getConfigValue("modDir")}\\${mod.fileName}`, `${getConfigValue("modDir")}\\fmm-unused\\${mod.fileName}`);
+		if(fs.existsSync(`${modDir}\\${mod.fileName}`)){
+			fs.renameSync(`${modDir}\\${mod.fileName}`, `${modDir}\\fmm-unused\\${mod.fileName}`);
 			mod.altversions.push({version: mod.version, fileName: mod.fileName});
 		}else{
 			if(mod.version != null) console.log(chalk.yellow(`Could not find ${mod.modName} in the mods folder.`));
@@ -31,8 +32,8 @@ export async function updateMods(version){
 		let swapInMod = mod.altversions[swapInModIndex];
 		if(swapInMod){
 			// move the mod to the mods folder
-			if(fs.existsSync(`${getConfigValue("modDir")}\\fmm-unused\\${swapInMod.fileName}`)){
-				fs.renameSync(`${getConfigValue("modDir")}\\fmm-unused\\${swapInMod.fileName}`, `${getConfigValue("modDir")}\\${swapInMod.fileName}`);
+			if(fs.existsSync(`${modDir}\\fmm-unused\\${swapInMod.fileName}`)){
+				fs.renameSync(`${modDir}\\fmm-unused\\${swapInMod.fileName}`, `${modDir}\\${swapInMod.fileName}`);
 				mod.version = swapInMod.version;
 				mod.fileName = swapInMod.fileName;	
 			}else{
@@ -40,11 +41,10 @@ export async function updateMods(version){
 			}
 			mod.altversions.splice(swapInModIndex, 1);
 		}else{
-			setConfigValue({mods});
-			await downloadMod(mod.modID, mod.modName);
-			mods = getConfigValue("mods");
+			await downloadMod(mod.modID, {modName: mod.modName, modsObject: mods});
 		}
 	}
+	console.log(mods)
 	setConfigValue({mods});
 }
 
