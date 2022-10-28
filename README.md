@@ -18,13 +18,13 @@ For quick setup, run `fmm setup` to get a setup menu. Follow the steps given by 
 
 Once you have set up fmm, you can safely use it to download and manage mods. To install a mod, type `fmm download -q [modID or slug]`. You can find the mod's ID on the curseforge page, and it's slug will be the end of the link to it.
 
-For example, if I wanted to download tweakeroo, I would type `fmm download -q tweakeroo`. The loader will always attempt to get a version of the mod that matches your selected fabric version, and will return an error if none exist.
+For example, if you want to download tweakeroo, you would type `fmm download -q tweakeroo`. The loader will always attempt to get a version of the mod that matches your selected fabric version, and will return an error if none exist.
 
 #### Versioning
 
 The main allure of fmm is that it can easily move between versions. To do this, use the `fmm version --ver [new fabric version]` command.
 
-This will store away the mods you are currenly using for re-use later, and attempt to get the mods you had before for the new version. IF a mod doesn't have a release for that version, it will be skipped.
+This will store away the mods you are currenly using for re-use later, and attempt to get the mods you had before for the new version. If a mod doesn't have a release for that version, it will be skipped.
 
 ### Commands
 
