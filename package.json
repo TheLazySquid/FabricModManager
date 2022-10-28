@@ -1,13 +1,10 @@
 {
   "name": "fmm",
-  "version": "0.3.0",
-  "description": "",
+  "version": "0.4.0",
+  "description": "A command line tool for managing fabric mods",
   "main": "bin/index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "TheLazySquid",
   "license": "ISC",
   "bin": {
     "fmm": "./bin/index.js"

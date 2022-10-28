@@ -31,8 +31,11 @@ This will store away the mods you are currenly using for re-use later, and attem
 #### `fmm setup`
 Displays a setup menu to get you started with fmm.
 
-#### `fmm download -q [modID or slug]`
+#### `fmm install -q [modID or slug]`
 Downloads a mod from curseforge. You can find the mod's ID on the curseforge page, and it's slug will be the end of the link to it.
+
+#### `fmm uninstall -q [modID or slug]`
+Uninstalls a mod you have previously installed.
 
 #### `fmm version`
 When left blank, will show the current version of fabric you are using. When given the `--ver [new fabric version]` flag, it will attempt to move to that version.
@@ -45,3 +48,6 @@ Will set your curseforge API key to the given key. You can get a key [here](http
 
 #### `fmm list`
 Lists all the mods you have installed.
+
+#### `fmm reinstall`
+Reinstalls any mods you have installed, in case you have deleted them. Use the `--force` flag to force a reinstall of all mods.
