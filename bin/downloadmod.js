@@ -35,6 +35,7 @@ export async function downloadMod(slug, {modName, force, modsObject}){
 	}else{
 		console.log("Downloading mod: " + slug);
 		const modResults = await client.searchMods(CurseForgeGameEnum.Minecraft, {slug});
+		modResults.data = modResults.data.filter(m => !m.links.websiteUrl.includes("/modpacks/"));
 		mod = modResults.data[0];
 		if(modResults.data.length == 0){
 			console.log(chalk.red("No mods found for that query, try downloading a mod with it's curseforge id instead"));

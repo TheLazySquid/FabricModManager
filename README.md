@@ -51,3 +51,6 @@ Lists all the mods you have installed.
 
 #### `fmm reinstall`
 Reinstalls any mods you have installed, in case you have deleted them. Use the `--force` flag to force a reinstall of all mods.
+
+### Notes
+There is currently no support for modpacks
