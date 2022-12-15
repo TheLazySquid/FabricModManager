@@ -143,8 +143,8 @@ export async function downloadMod(slug, {modName, force, modsObject}){
 			}
 
 			// delete the tmp folder
-			fs.rmdir(modpackFolder, { recursive: true }, (err) => {
-				if(err) console.log(err);
+			fs.rmdirSync(tmpFolder, { recursive: true }, (err) => {
+				if(err) console.log(chalk.red("Failed to delete tmp folder"));
 			});
 
 			return;
