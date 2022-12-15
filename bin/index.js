@@ -11,6 +11,8 @@ import {getFabricVersions} from './files.js';
 import { updateMods, updateModDir } from './update.js';
 import fs from 'fs';
 
+export const inq = inquirer;
+
 export const rl = readline.createInterface({
 	input: process.stdin,
 	output: process.stdout
@@ -82,7 +84,7 @@ yargs(hideBin(process.argv))
 		
 		answer = await rl.question(`What directory would you like to download mods to? (Leave blank for ${process.env.APPDATA}\\.minecraft\\mods)\n`)
 		|| `${process.env.APPDATA}\\.minecraft\\mods`;
-		updateModDir(answer);
+		await updateModDir(answer);
 
 		// search for fabric versions
 		let versions = getFabricVersions();

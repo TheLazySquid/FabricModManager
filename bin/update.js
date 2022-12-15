@@ -60,7 +60,7 @@ export async function updateModDir(directory){
 		if(fs.existsSync(`${oldModDir}\\${mod.fileName}`)){
 			fs.renameSync(`${oldModDir}\\${mod.fileName}`, `${directory}\\${mod.fileName}`);
 		}
-		for(let alt of mod.altversions){
+		for(let alt of mod.altversions ?? []){
 			if(fs.existsSync(`${oldModDir}\\fmm-unused\\${alt.fileName}`)){
 				fs.renameSync(`${oldModDir}\\fmm-unused\\${alt.fileName}`, `${directory}\\fmm-unused\\${alt.fileName}`);
 			}
