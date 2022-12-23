@@ -182,5 +182,10 @@ yargs(hideBin(process.argv))
 		process.exit();
 	}
 })
+.command({
+	command: "disable",
+	describe: "Disable a mod for use later",
+	// builder: 
+})
 .demandCommand()
 .argv

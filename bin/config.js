@@ -49,5 +49,5 @@ export function addMod(modID, version, fileName, modName, modSlug, modsObject){
 	}
 	// save the config
 	if(modsObject) modsObject = configJson.mods;
-	else fs.writeFileSync(configFile, JSON.stringify(configJson, null, 4));
+	fs.writeFileSync(configFile, JSON.stringify(configJson, null, 4));
 }

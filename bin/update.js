@@ -41,10 +41,11 @@ export async function updateMods(version){
 			}
 			mod.altversions.splice(swapInModIndex, 1);
 		}else{
+			setConfigValue({mods});
 			await downloadMod(mod.modID, {modName: mod.modName, modsObject: mods});
+			mods = getConfigValue("mods")
 		}
 	}
-	console.log(mods)
 	setConfigValue({mods});
 }
 
