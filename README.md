@@ -1,53 +1,68 @@
 # Fabric Mod Manager
 
-Fabric Mod Manager is a tool to manage Fabric mods. It is designed to be used with the [Fabric Loader](https://fabricmc.net/use/). It's kind of a mess internally, and I might do a rewrite soon, but who cares.
+Fabric Mod manager is a command line tool to install, update and otherwise manage mods for the Fabric mod loader. For now, it only supports the Modrinth mod repository, but support for other repositories (especially CurseForge) will be added in the future.
 
-### Getting the script running
+## Installation
 
-1. Download this repository to your computer, either with git or by downloading the zip file.
+To install FMM, you can download or clone this reposiory. Then, open a terminal inside the directory and run `npm i -g .` to install it globally.
 
-2. Make sure you have [Node.js](https://nodejs.org/en/) installed at version 19.0.0 or above.
+## Setup
 
-3. Open a terminal in the directory you downloaded this repository to and run `npm i -g .` to install this tool globally.
+To get started using FMM, you need to set the directory where mods will be downloaded to. This will probably look like
 
-### Getting Started
+`fmm moddir -p "C:\Users\<name>\AppData\Roaming\.minecraft\mods"`
 
-For quick setup, run `fmm setup` to get a setup menu. Follow the steps given by the tool to get going. This will include getting a curseforge API key, which you can get [here](https://console.curseforge.com/#/api-keys).
+You can then start installing mods with `fmm install`
 
-### Usage
+## Commands
 
-Once you have set up fmm, you can safely use it to download and manage mods. To install a mod, type `fmm download -q [modID or slug]`. You can find the mod's ID on the curseforge page, and it's slug will be the end of the link to it.
+### `fmm install -q <modID/slug>`
 
-For example, if you want to download tweakeroo, you would type `fmm download -q tweakeroo`. The loader will always attempt to get a version of the mod that matches your selected fabric version, and will return an error if none exist.
+Installs a mod from Modrinth with it's ID or slug. An example of this command would look like this:
 
-#### Versioning
+```bash
+fmm install -q no-chat-reports
+```
 
-The main allure of fmm is that it can easily move between versions. To do this, use the `fmm version --ver [new fabric version]` command.
+### `fmm uninstall -q <modID/slug>`
 
-This will store away the mods you are currenly using for re-use later, and attempt to get the mods you had before for the new version. If a mod doesn't have a release for that version, it will be skipped.
+Uninstalls a mod, and deletes it's files. An example of this command would look like this:
 
-### Commands
+```bash
+fmm uninstall -q no-chat-reports
+```
 
-#### `fmm setup`
-Displays a setup menu to get you started with fmm.
+### `fmm moddir -p <path>`
 
-#### `fmm install -q [modID or slug]`
-Downloads a mod from curseforge. You can find the mod's ID on the curseforge page, and it's slug will be the end of the link to it.
+Sets the directory where mods will be downloaded to. This is neccesary to begin downloading mods. An example of this command would look like this:
 
-#### `fmm uninstall -q [modID or slug]`
-Uninstalls a mod you have previously installed.
+```bash
+fmm moddir -p "C:\Users\<name>\AppData\Roaming\.minecraft\mods"
+```
 
-#### `fmm version`
-When left blank, will show the current version of fabric you are using. When given the `--ver [new fabric version]` flag, it will attempt to move to that version.
+### `fmm list`
 
-#### `fmm moddir`
-When left blank, will show the current mod directory. When given the `--dir [new mod directory]` flag, it will attempt to move to that directory.
+Returns an ASCII table of all installed mods.
 
-#### `fmm key --key [your api key]`
-Will set your curseforge API key to the given key. You can get a key [here](https://console.curseforge.com/#/api-keys).
+### `fmm version -v <version>`
 
-#### `fmm list`
-Lists all the mods you have installed.
+Updates the version of Fabric to use for mod installation. Automatically updates all mods to the set fabric version. An example of this command would look like this:
 
-#### `fmm reinstall`
-Reinstalls any mods you have installed, in case you have deleted them. Use the `--force` flag to force a reinstall of all mods.gi
+```bash
+fmm version -v 1.13.2
+```
+
+### `fmm disable -q <modID/slug>`
+
+Disables a mod, but stores it's files for use later. An example of this command would look like this:
+
+```bash
+fmm disable -q no-chat-reports
+```
+
+### `fmm enable -q <modID/slug>`
+Enables a mod, and restores it's files. An example of this command would look like this:
+
+```bash
+fmm enable -q no-chat-reports
+```
