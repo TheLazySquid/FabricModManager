@@ -1,6 +1,6 @@
 # Fabric Mod Manager
 
-Fabric Mod Manager is a tool to manage Fabric mods. It is designed to be used with the [Fabric Loader](https://fabricmc.net/use/).
+Fabric Mod Manager is a tool to manage Fabric mods. It is designed to be used with the [Fabric Loader](https://fabricmc.net/use/). It's kind of a mess internally, and I might do a rewrite soon, but who cares.
 
 ### Getting the script running
 

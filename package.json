@@ -10,10 +10,9 @@
     "fmm": "./bin/index.js"
   },
   "dependencies": {
-    "chalk": "^5.1.2",
-    "curseforge-api": "^1.0.2",
+    "chalk": "^5.2.0",
     "inquirer": "^9.1.4",
-    "unzipper": "^0.10.11",
-    "yargs": "^17.6.0"
+    "node-fetch": "^3.3.0",
+    "yargs": "^17.6.2"
   }
 }
