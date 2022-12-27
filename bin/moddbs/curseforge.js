@@ -33,7 +33,7 @@ export var curseforge = {
 			game_versions: file.sortableGameVersions.filter(v => v.gameVersion != '').map(v => v.gameVersion)
 		}
 	},
-	async getMod(modID){
+	async getMod(modID, hideErrors){
 		let curseforgeKey = getAPIKey("curseforge");
 		if(!curseforgeKey){
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
@@ -44,23 +44,25 @@ export var curseforge = {
 		let modData;
 		if(isNaN(parseInt(modID))){
 			// the modID is a slug
-			const modResults = await client.searchMods(CurseForgeGameEnum.Minecraft, {slug: modID});
+			var modResults = await client.searchMods(CurseForgeGameEnum.Minecraft, {slug: modID});
+			// remove any modpacks
+			modResults = modResults.data.filter(m => !m.links.websiteUrl.includes("/modpacks/"))
 			if(modResults.length == 0){
-				console.log(chalk.red("Error: ") + "Mod not found.");
+				if(!hideErrors) console.log(chalk.red("Error: ") + "Mod not found.");
 				return;
 			}
-			modData = modResults.data[0];
+			modData = modResults[0];
 		}else{
 			try {
 				modData = await client.getMod(modID);
 			}catch(e){
-				console.log(chalk.red("Error: ") + "Mod not found.");
+				if(!hideErrors) console.log(chalk.red("Error: ") + "Mod not found.");
 				return;
 			}
 		}
 
 		if(!modData){
-			console.log(chalk.red("Error: ") + "Mod not found.");
+			if(!hideErrors) console.log(chalk.red("Error: ") + "Mod not found.");
 			return;
 		}
 		

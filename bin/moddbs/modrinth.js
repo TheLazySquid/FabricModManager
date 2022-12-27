@@ -85,13 +85,13 @@ export var modrinth = {
 			url: version.files[0].url,
 		};
 	},
-	async getMod(modID){
+	async getMod(modID, hideErrors){
 		let res = await fetch(`https://api.modrinth.com/v2/project/${modID}`)
 		let data = await res.text();
 		try{
 			data = JSON.parse(data);
 		}catch(e){
-			console.log(chalk.red("Error: ") + "Something went wrong, Mod ID may be invalid.");
+			if(!hideErrors) console.log(chalk.red("Error: ") + "Something went wrong, Mod ID may be invalid.");
 			return;
 		}
 		let mod = new Mod("Modrinth", data.slug, data.id, data.title);
@@ -103,7 +103,7 @@ export var modrinth = {
 		try{
 			data = JSON.parse(data);
 		}catch(e){
-			console.log(chalk.red("Error: ") + "Something went wrong searching for mods.");
+			if(!hideErrors) console.log(chalk.red("Error: ") + "Something went wrong searching for mods.");
 			return null;
 		}
 		let hits = data.hits.map(hit => {

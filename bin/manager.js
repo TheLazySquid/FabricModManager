@@ -35,8 +35,14 @@ export async function installCurseForgeMod(modID){
 }
 
 export async function searchAllPlatforms(modID){
-	let mrMod = await modrinth.getMod(modID);
-	let cfMod = await curseforge.getMod(modID);
+	// check if the mod is already installed
+	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
+	if(existingMod){
+		console.log(chalk.red("Error: ") + `${existingMod.title} is already installed.`);
+		return;	
+	}
+	let mrMod = await modrinth.getMod(modID, true);
+	let cfMod = await curseforge.getMod(modID, true);
 	let mod;
 
 	if(!mrMod && !cfMod){
