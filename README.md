@@ -1,6 +1,6 @@
 # Fabric Mod Manager
 
-Fabric Mod manager is a command line tool to install, update and otherwise manage mods for the Fabric mod loader. For now, it only supports the Modrinth mod repository, but support for other repositories (especially CurseForge) will be added in the future.
+Fabric Mod manager is a command line tool to install, update and otherwise manage mods for the Fabric mod loader.
 
 ## Installation
 
@@ -16,12 +16,13 @@ You can then start installing mods with `fmm install`
 
 ## Commands
 
-### `fmm install -q <modID/slug>`
+### `fmm install [platform] -q <modID/slug>`
 
-Installs a mod from Modrinth with it's ID or slug. An example of this command would look like this:
-
+Installs a mod from either curseforge or modrinth. You can specify which platform to install it from by setting platform, but otherwise it will automatically search both. An example of this command would look like this:
 ```bash
 fmm install -q no-chat-reports
+fmm install curseforge -q no-chat-reports
+fmm install modrinth -q qQyHxfxd
 ```
 
 ### `fmm uninstall -q <modID/slug>`
@@ -30,6 +31,14 @@ Uninstalls a mod, and deletes it's files. An example of this command would look 
 
 ```bash
 fmm uninstall -q no-chat-reports
+```
+
+### `fmm key <platform> <key>`
+
+Sets an API key for a platform. Right now, this is only neccesary for Curseforge. You can obtain a curseforge api key [here](https://console.curseforge.com/#/api-keys). An example of this command would look like this:
+
+```bash
+fmm key curseforge [your_epic_key_here]
 ```
 
 ### `fmm moddir -p <path>`
