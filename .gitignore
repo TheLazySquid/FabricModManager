@@ -1,5 +1,6 @@
 node_modules
 fmmconfig.json
+saveconfig.json
 package-lock.json
 test_mods
 old

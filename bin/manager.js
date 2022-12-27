@@ -90,13 +90,13 @@ export async function searchAllPlatforms(modID){
 	mod.swapVersion(index);
 }
 
-export function triggerModFunction(query, functionName){
+export function triggerModFunction(query, functionName, ...args){
 	let mods = loadMods();
 
 	// trigger on all mods if query is "all"
 	if(query.toLowerCase() == "all"){
 		for(let mod of mods){
-			mod[functionName]();
+			mod[functionName](...args);
 		}
 		return;
 	}

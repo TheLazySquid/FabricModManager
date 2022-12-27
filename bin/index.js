@@ -57,8 +57,22 @@ yargs(hideBin(process.argv))
 		}
 		// set the mod directory
 		if(fs.existsSync(argv.path)){
-			console.log(chalk.green("Mod directory set to: " + argv.path));
+			let oldModDir = getConfigValue("modDir")
 			setConfigValue("modDir", argv.path);
+
+			// move all .jar files from the old mod directory to the new one
+			let files = fs.readdirSync(oldModDir);
+			for(let file of files){
+				if(file.endsWith(".jar")){
+					fs.renameSync(oldModDir + "/" + file, argv.path + "/" + file);
+				}
+			}
+
+			// move the fmm_unused folder
+			if(fs.existsSync(oldModDir + "\\fmm_unused")){
+				fs.renameSync(oldModDir + "\\fmm_unused", argv.path + "\\fmm_unused");
+			}
+			console.log(chalk.green("Mod directory set to: " + argv.path));
 		}else{
 			console.log(chalk.red("Error: ") + "Mod directory does not exist.");
 		}
@@ -173,6 +187,35 @@ yargs(hideBin(process.argv))
 			return;
 		}
 		setAPIKey(argv.platform, argv.key);
+	}
+})
+.command({
+	command: "loader [loader]",
+	describe: "Set your mod loader of choice. Currently supports Fabric, Forge and Quilt",
+	handler: (argv) => {
+		if(!argv.loader){
+			console.log("Current loader: " + getConfigValue("loader") || "not set");
+			return;
+		}
+		setConfigValue("loader", argv.loader);
+	}
+})
+.command({
+	command: "reinstall",
+	describe: "Reinstall a mod",
+	builder: {
+		query: {
+			type: "string",
+			describe: "The name/id of the mod to reinstall",
+			alias: "q"
+		}
+	},
+	handler: (argv) => {
+		if(!argv.query){
+			console.log(chalk.red("Error: ") + "No mod specified.");
+			return;
+		}
+		triggerModFunction(argv.query, "reinstall");
 	}
 })
 .demandCommand()

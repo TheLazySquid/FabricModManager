@@ -210,4 +210,9 @@ export class Mod{
 		if(index == -1) return;
 		this.swapVersion(index);
 	}
+
+	async reinstall(){
+		await this.swapVersion(this.activeVersionIndex);
+		console.log(chalk.green("Success: ") + `${this.title} reinstalled successfully.`);
+	}
 }

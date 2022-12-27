@@ -75,3 +75,7 @@ Enables a mod, and restores it's files. An example of this command would look li
 ```bash
 fmm enable -q no-chat-reports
 ```
+
+### `fmm reinstall -q <modID/slug>`
+
+Reinstalls a mod on the current version.

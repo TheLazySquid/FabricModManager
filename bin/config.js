@@ -5,13 +5,17 @@ import { dirname, join} from 'path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const configFile = join(__dirname, "../") + "\\fmmconfig.json";
 
+const defaultConfigValues = {
+	loader: "fabric"
+}
+
 export function getConfigValue(key){
 	// make sure the config file exists
 	if(!fs.existsSync(configFile)) return null;
 	const config = fs.readFileSync(configFile, 'utf8') || "{}";
 	var configJson = JSON.parse(config);
 	
-	return configJson[key] ?? null;
+	return configJson[key] ?? (defaultConfigValues[key] ?? null);
 }
 
 export function setConfigValue(key, value){
