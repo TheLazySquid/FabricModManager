@@ -1,29 +1,41 @@
 import yargs from "yargs";
 import fs from "fs";
 import { hideBin } from "yargs/helpers";
-import { getConfigValue, setConfigValue } from "./config.js";
-import { installModrinthMod, triggerModFunction } from "./manager.js";
+import { getConfigValue, setAPIKey, setConfigValue } from "./config.js";
+import { installCurseForgeMod, installModrinthMod, searchAllPlatforms, triggerModFunction } from "./manager.js";
 import chalk from "chalk";
 import { loadMods } from "./utils.js";
 
+import inquirer from "inquirer";
+
+// export inquirer for use in other files
+export { inquirer };
+
 yargs(hideBin(process.argv))
 .command({
-	command: "install",
-	aliases: ["i"],
+	command: "install [type]",
 	describe: "Install a mod",
+	aliases: ["i"],
 	builder: {
 		query: {
 			type: "string",
-			describe: "The name/ID of the mod to install",
+			describe: "The name/id of the mod to install",
 			alias: "q"
 		}
 	},
 	handler: (argv) => {
 		if(!argv.query){
-			console.log(chalk.red("Error: ") + "No query provided.");
+			console.log(chalk.red("Error: ") + "No mod specified! use 'fmm install -q <modID/slug>");
 			return;
 		}
-		installModrinthMod(argv.query);
+		let type = argv.type?.toLowerCase();
+		if(type == "modrinth" || type == "m"){
+			installModrinthMod(argv.query);
+		}else if(type == "curseforge" || type == "curse" || type == "c"){
+			installCurseForgeMod(argv.query);
+		}else{
+			searchAllPlatforms(argv.query);
+		}
 	}
 })
 .command({
@@ -139,19 +151,28 @@ yargs(hideBin(process.argv))
 	command: "enable",
 	aliases: ["e"],
 	describe: "Enable a mod",
-	builder: {
-		query: {
-			type: "string",
-			describe: "The name/id of the mod to enable",
-			alias: "q"
-		}
-	},
 	handler: async (argv) => {
 		if(!argv.query){
 			console.log(chalk.red("Error: ") + "No mod specified.");
 			return;
 		}
 		triggerModFunction(argv.query, "enable");
+	}
+})
+.command({
+	command: "key <platform> <key>",
+	describe: "Set the API key for a platform",
+	handler: (argv) => {
+		if(!argv.platform || !argv.key){
+			console.log(chalk.red("Error: ") + "No platform or key specified.");
+			return;
+		}
+		let platforms = ["curseforge"];
+		if(!platforms.includes(argv.platform)){
+			console.log(chalk.red("Error: ") + "Invalid platform specified. It needs to be one of: " + platforms.join(", "));
+			return;
+		}
+		setAPIKey(argv.platform, argv.key);
 	}
 })
 .demandCommand()

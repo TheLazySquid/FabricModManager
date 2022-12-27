@@ -44,3 +44,20 @@ export function updateMod(mod){
 	// save the mods
 	setConfigValue("mods", mods);
 }
+
+export function setAPIKey(site, key){
+	var keys = getConfigValue("keys");
+	if(!keys) keys = {};
+
+	keys[site] = key;
+	setConfigValue("keys", keys);
+
+	console.log(chalk.green(`${site} API key successfully updated`))
+}
+
+export function getAPIKey(site){
+	var keys = getConfigValue("keys");
+	if(!keys) keys = {};
+
+	return keys[site] ?? null;
+}

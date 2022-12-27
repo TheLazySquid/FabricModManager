@@ -2,9 +2,9 @@ import fetch from "node-fetch";
 import { getConfigValue, setConfigValue, updateMod } from "./config.js";
 import chalk from "chalk";
 import fs from 'fs';
-import inquirer from "inquirer";
-import { installModrinthMod } from "./manager.js";
 import { confirmUnusedExists } from "./utils.js";
+import { modrinth } from "./moddbs/modrinth.js";
+import { curseforge } from "./moddbs/curseforge.js";
 
 export class Mod{
 	constructor(site, slug, id, title){
@@ -36,79 +36,19 @@ export class Mod{
 			return existingIndex;
 		}
 
-		// get the mod's versions
-		var res = await fetch(`https://api.modrinth.com/v2/project/${this.id}/version`)
-		var data = await res.text()
-		try{
-			data = JSON.parse(data);
-		}catch(e){
-			console.log(chalk.red("Error: ") + `Something went wrong getting the versions for ${this.title}.`);
-			return null;
+		let version;
+		switch(this.site.toLowerCase()){
+			case "modrinth":
+				version = await modrinth.getVersion(this, gameVersion);
+				break;
+			case "curseforge":
+				version = await curseforge.getVersion(this, gameVersion);
 		}
 
-		// only show fabric versions
-		data = data.filter((version) => version.loaders.includes("fabric"));
-
-		let versionIndex = data.findIndex((version) => version.game_versions.includes(gameVersion));
-		if(versionIndex == -1){
-			console.log(chalk.red("Error: ") + `No version of ${this.title} is compatible with Minecraft ${gameVersion}.`);
-			return null;
-		}
-
-		// add the version to the versions array
-		let version = data[versionIndex];
-		this.versions.push({
-			game_versions: version.game_versions,
-			fileName: version.files[0].filename,
-			url: version.files[0].url
-		})
+		// add the version to the versions array without the dependencies
+		this.versions.push(version);
 
 		updateMod(this);
-
-		// install any dependencies
-		if(version.dependencies.length > 0){
-			let mods = getConfigValue("mods");
-			let res = await fetch(`https://api.modrinth.com/v2/project/${this.id}/dependencies`)
-			let data = await res.text()
-			try{
-				data = JSON.parse(data);
-			}catch(e){
-				console.log(chalk.red("Error: ") + `Something went wrong getting the dependencies for ${this.title}.`);
-				return null;
-			}
-			
-			// make a checklist so that the user can select which dependencies to install
-			let choices = data.projects.map((dependency) => {
-				let dependencyIndex = version.dependencies.findIndex((dep) => dep.project_id == dependency.id);
-				if(dependencyIndex == -1) return null;
-				let dep = version.dependencies[dependencyIndex];
-				let dep_type = dep.dependency_type;
-				// remove dependencies that are already installed
-				let depInstalled = mods.findIndex((mod) => mod.id == dependency.id) != -1;
-				if(depInstalled) return null;
-				return {
-					name: dependency.title + ` (${dep_type})`,
-					value: dependency.id,
-					checked: !(dep_type == "optional")
-				}
-			})
-			// remove null values
-			choices = choices.filter((choice) => choice != null);
-
-			let answers = await inquirer.prompt([
-				{
-					type: "checkbox",
-					name: "dependencies",
-					message: `Select dependencies to install for ${this.title}`,
-					choices
-				}
-			])
-
-			// install the dependencies
-			for(let dependency of answers.dependencies){
-				installModrinthMod(dependency);
-			}
-		}
 		
 		return this.versions.length - 1;
 	}

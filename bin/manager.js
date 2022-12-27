@@ -1,10 +1,11 @@
-import fetch from "node-fetch";
 import chalk from "chalk";
-import { Mod } from "./mod.js";
 import { getConfigValue } from "./config.js";
 import { loadMods } from "./utils.js";
+import { curseforge } from "./moddbs/curseforge.js";
+import { modrinth } from "./moddbs/modrinth.js";
+import { inquirer } from "./index.js";
 
-export function installModrinthMod(modID){
+export async function installModrinthMod(modID){
 	// check if the mod is already installed
 	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
 	if(existingMod){
@@ -12,26 +13,75 @@ export function installModrinthMod(modID){
 		return;
 	}
 
-	fetch(`https://api.modrinth.com/v2/project/${modID}`)
-	.then(res => res.text())
-	.then(async data => {
-		try{
-			data = JSON.parse(data);
-		}catch(e){
-			console.log(chalk.red("Error: ") + "Something went wrong, Mod ID may be invalid.");
-			return;
-		}
-
-		let mod = new Mod("Modrinth", data.slug, data.id, data.title);
-		
-		// update and install the mod
-		let index = await mod.updateVersion()
-		mod.swapVersion(index);
-	});
+	let mod = await modrinth.getMod(modID);
+	// update and install the mod
+	let index = await mod.updateVersion()
+	mod.swapVersion(index);
 }
 
-export function installCurseForgeMod(modID){
-	
+export async function installCurseForgeMod(modID){
+	// check if the mod is already installed
+	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
+	if(existingMod){
+		console.log(chalk.red("Error: ") + `${existingMod.title} is already installed.`);
+		return;
+	}
+
+	let mod = await curseforge.getMod(modID);
+
+	// install and update the mod
+	let index = await mod.updateVersion();
+	mod.swapVersion(index);
+}
+
+export async function searchAllPlatforms(modID){
+	let mrMod = await modrinth.getMod(modID);
+	let cfMod = await curseforge.getMod(modID);
+	let mod;
+
+	if(!mrMod && !cfMod){
+		console.log(chalk.red("Error: ") + "Mod not found.");
+		return;
+	}
+
+	if(mrMod && cfMod){
+		let res = await inquirer.prompt([
+			{
+				type: "list",
+				name: "mod",
+				message: "Which platform would you like to install this mod from?",
+				choices: [
+					{
+						name: "Modrinth (recommended)",
+						value: "modrinth"
+					},
+					{
+						name: "CurseForge",
+						value: "curseforge"
+					}
+				]
+			}
+		])
+
+		if(res.mod == "modrinth"){
+			mod = mrMod;
+		}else{
+			mod = cfMod;
+		}
+	}else{
+		// if only one mod is found, install it
+		if(mrMod){
+			console.log(chalk.green("Installing mod from Modrinth"));
+			mod = mrMod;
+		}else{
+			console.log(chalk.green("Installing mod from CurseForge"));
+			mod = cfMod;
+		}
+	}
+
+	// install and update the mod
+	let index = await mod.updateVersion();
+	mod.swapVersion(index);
 }
 
 export function triggerModFunction(query, functionName){
