@@ -10,7 +10,7 @@ export var curseforge = {
 		"cf",
 		"c"
 	],
-	async getVersion(mod, gameVersion){
+	async getVersion(mod, gameVersion, loader){
 		let curseforgeKey = getAPIKey("curseforge");
 		if(!curseforgeKey){
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
@@ -18,19 +18,37 @@ export var curseforge = {
 		}
 		var client = new CurseForgeClient(curseforgeKey, {fetch});
 
+		let loaderID;
+		switch(loader.toLowerCase()){
+			case "fabric":
+				loaderID = CurseForgeModLoaderType.Fabric;
+				break;
+			case "forge":
+				loaderID = CurseForgeModLoaderType.Forge;
+				break;
+			case "quilt":
+				loaderID = CurseForgeModLoaderType.Quilt;
+				break;
+		}
+
 		const remoteMod = await client.getMod(mod.id);
 		const files = await remoteMod.getFiles(mod.id, {
 			gameVersion: gameVersion,
-			modLoaderType: CurseForgeModLoaderType.Fabric
+			modLoaderType: loaderID
 		})
 
 		// find a file that matches the game version
 		let file = files.data.find((file) => file.gameVersions.includes(gameVersion));
+		if(!file){
+			console.log(chalk.red("Error: ") + "No file found for " + gameVersion + " with " + loader + " loader.");
+			return null;
+		}
 
 		return {
 			url: file.downloadUrl,
 			fileName: file.fileName,
-			game_versions: file.sortableGameVersions.filter(v => v.gameVersion != '').map(v => v.gameVersion)
+			game_versions: file.sortableGameVersions.filter(v => v.gameVersion != '').map(v => v.gameVersion),
+			
 		}
 	},
 	async getMod(modID, hideErrors){

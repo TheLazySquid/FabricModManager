@@ -11,7 +11,7 @@ export var modrinth = {
 		"mr",
 		"m"
 	],
-	async getVersion(mod, gameVersion){
+	async getVersion(mod, gameVersion, loader){
 		// get the mod's versions
 		var res = await fetch(`https://api.modrinth.com/v2/project/${mod.id}/version`)
 		var data = await res.text()
@@ -22,13 +22,13 @@ export var modrinth = {
 			return null;
 		}
 
-		// only show fabric versions
-		data = data.filter((version) => version.loaders.includes("fabric"));
+		// only show versions for the correct modloader
+		data = data.filter((version) => version.loaders.includes(loader));
 
 		// find a compatible version
 		let versionIndex = data.findIndex((version) => version.game_versions.includes(gameVersion));
 		if(versionIndex == -1){
-			console.log(chalk.red("Error: ") + `No version of ${mod.title} is compatible with Minecraft ${gameVersion}.`);
+			console.log(chalk.red("Error: ") + "No version found for " + gameVersion + " with " + loader + " loader.");
 			return null;
 		}
 
@@ -83,6 +83,7 @@ export var modrinth = {
 			game_versions: version.game_versions,
 			fileName: version.files[0].filename,
 			url: version.files[0].url,
+			loader: loader
 		};
 	},
 	async getMod(modID, hideErrors){

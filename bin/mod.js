@@ -25,13 +25,15 @@ export class Mod{
 
 	async updateVersion(){
 		const gameVersion = getConfigValue("version");
+		const loader = getConfigValue("loader");
 
 		if(!gameVersion){
 			console.log(chalk.red("Error: ") + "No Minecraft version set. You can set the minecraft version with 'fmm version -v <version>'");
 			return null;
 		}
-		// check if we already have a version for this game version
-		let existingIndex = this.versions.findIndex((version) => version.game_versions.includes(gameVersion));
+		// check if we already have a version for this game version and loader
+		let existingIndex = this.versions.findIndex((version) => version.game_versions.includes(gameVersion)
+		&& version.loader == loader);
 		if(existingIndex != -1){
 			return existingIndex;
 		}
@@ -39,10 +41,13 @@ export class Mod{
 		let version;
 		switch(this.site.toLowerCase()){
 			case "modrinth":
-				version = await modrinth.getVersion(this, gameVersion);
+				version = await modrinth.getVersion(this, gameVersion, loader);
 				break;
 			case "curseforge":
-				version = await curseforge.getVersion(this, gameVersion);
+				version = await curseforge.getVersion(this, gameVersion, loader);
+		}
+		if(!version){
+			return null;
 		}
 
 		// add the version to the versions array without the dependencies
@@ -102,6 +107,7 @@ export class Mod{
 			return;
 		}
 
+		if(index == null) return;
 		if(index >= this.versions.length){
 			console.log(chalk.red("Error: ") + "Invalid version index.");
 			return;
@@ -130,7 +136,7 @@ export class Mod{
 		if(fs.existsSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName)){
 			fs.renameSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName, modDir + "\\" + this.activeVersion.fileName);
 		}else{
-			// install the version and then swap it in`
+			// install the version and then swap it in
 			await this.installVersion(true);
 			this.swapVersion(index);
 		}

@@ -192,12 +192,27 @@ yargs(hideBin(process.argv))
 .command({
 	command: "loader [loader]",
 	describe: "Set your mod loader of choice. Currently supports Fabric, Forge and Quilt",
-	handler: (argv) => {
+	handler: async (argv) => {
 		if(!argv.loader){
 			console.log("Current loader: " + getConfigValue("loader") || "not set");
 			return;
 		}
+		const loaders = ["fabric", "forge", "quilt"];
+		if(!loaders.includes(argv.loader?.toLowerCase())){
+			console.log(chalk.red("Error: ") + "Invalid loader specified. It needs to be one of: " + loaders.join(", "));
+			return;
+		}
 		setConfigValue("loader", argv.loader);
+		console.log(chalk.green("Loader set to: ") + argv.loader);
+
+		// update all mods
+		let mods = loadMods();
+
+		for(let mod of mods){
+			console.log(chalk.green("Updating mod: ") + mod.title);
+			let index = await mod.updateVersion();
+			await mod.swapVersion(index);
+		}
 	}
 })
 .command({

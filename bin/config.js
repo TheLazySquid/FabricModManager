@@ -9,24 +9,23 @@ const defaultConfigValues = {
 	loader: "fabric"
 }
 
-export function getConfigValue(key){
-	// make sure the config file exists
-	if(!fs.existsSync(configFile)) return null;
+let configSave = null;
+
+export function getConfig(){
+	if(configSave) return configSave;
+	if(!fs.existsSync(configFile)) return {};
 	const config = fs.readFileSync(configFile, 'utf8') || "{}";
-	var configJson = JSON.parse(config);
-	
-	return configJson[key] ?? (defaultConfigValues[key] ?? null);
+	configSave = JSON.parse(config);
+	return configSave;
+}
+
+export function getConfigValue(key){
+	let config = getConfig();	
+	return config[key] ?? (defaultConfigValues[key] ?? null);
 }
 
 export function setConfigValue(key, value){
-	// get the config file
-	let config = "{}"
-	if(fs.existsSync(configFile)){
-		config = fs.readFileSync(configFile, 'utf8') || "{}";
-	}
-
-	// set the value
-	config = JSON.parse(config);
+	let config = getConfig();
 	config[key] = value;
 	fs.writeFileSync(configFile, JSON.stringify(config, null, 4));
 }
