@@ -1,6 +1,6 @@
-# Fabric Mod Manager
+# Fast Mod Manager
 
-Fabric Mod manager is a command line tool to install, update and otherwise manage mods for the Fabric mod loader.
+Fast Mod manager is a command line tool to install, update and otherwise manage mods for minecraft.
 
 ## Installation
 
@@ -55,10 +55,18 @@ Returns an ASCII table of all installed mods.
 
 ### `fmm version -v <version>`
 
-Updates the version of Fabric to use for mod installation. Automatically updates all mods to the set fabric version. An example of this command would look like this:
+Updates the version of Minecraft to use for mod installation. Automatically updates all mods to the set minecraft version. An example of this command would look like this:
 
 ```bash
 fmm version -v 1.13.2
+```
+
+### `fmm loader [loader]`
+
+Sets the mod loader for fmm to install mods from. Right now, only Forge, Fabric and Quilt are supported. An example of this command would look like this:
+
+```bash
+fmm loader fabric
 ```
 
 ### `fmm disable -q <modID/slug>`
@@ -78,4 +86,4 @@ fmm enable -q no-chat-reports
 
 ### `fmm reinstall -q <modID/slug>`
 
-Reinstalls a mod on the current version.
+Reinstalls a mod, in case it was missing or otherwise broken.
