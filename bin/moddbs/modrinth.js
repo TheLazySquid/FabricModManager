@@ -1,6 +1,6 @@
 import { inquirer } from "./../index.js";
 import fetch from "node-fetch";
-import { getConfigValue } from "./../config.js";
+import { config } from "./../config.js";
 import chalk from "chalk";
 import { installModrinthMod } from "../manager.js";
 import { Mod } from "../mod.js";
@@ -36,7 +36,7 @@ export var modrinth = {
 
 		// install any dependencies
 		if(version.dependencies.length > 0){
-			let mods = getConfigValue("mods");
+			let mods = config.getConfigValue("mods");
 			let res = await fetch(`https://api.modrinth.com/v2/project/${mod.id}/dependencies`)
 			let data = await res.text()
 			try{
@@ -83,7 +83,7 @@ export var modrinth = {
 			game_versions: version.game_versions,
 			fileName: version.files[0].filename,
 			url: version.files[0].url,
-			loader: loader
+			loader: loader.toLowerCase()
 		};
 	},
 	async getMod(modID, hideErrors){

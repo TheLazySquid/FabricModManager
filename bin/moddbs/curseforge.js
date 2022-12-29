@@ -1,8 +1,9 @@
 import {CurseForgeClient, CurseForgeGameEnum, CurseForgeModLoaderType} from 'curseforge-api';
-import { getAPIKey } from '../config.js';
+import { config } from '../config.js';
 import chalk from 'chalk';
 import fetch from "node-fetch";
 import { Mod } from '../mod.js';
+import fs from 'fs';
 
 export var curseforge = {
 	names: [
@@ -11,7 +12,7 @@ export var curseforge = {
 		"c"
 	],
 	async getVersion(mod, gameVersion, loader){
-		let curseforgeKey = getAPIKey("curseforge");
+		let curseforgeKey = config.getAPIKey("curseforge");
 		if(!curseforgeKey){
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
 			return;
@@ -36,7 +37,9 @@ export var curseforge = {
 			gameVersion: gameVersion,
 			modLoaderType: loaderID
 		})
-
+		// filter the files to use the correct loader because the thing doesn't do that for some reason
+		files.data = files.data.filter(f => f.gameVersions.map(g => g.toLowerCase()).includes(loader.toLowerCase()));
+		
 		// find a file that matches the game version
 		let file = files.data.find((file) => file.gameVersions.includes(gameVersion));
 		if(!file){
@@ -48,11 +51,11 @@ export var curseforge = {
 			url: file.downloadUrl,
 			fileName: file.fileName,
 			game_versions: file.sortableGameVersions.filter(v => v.gameVersion != '').map(v => v.gameVersion),
-			
+			loader: loader.toLowerCase()
 		}
 	},
 	async getMod(modID, hideErrors){
-		let curseforgeKey = getAPIKey("curseforge");
+		let curseforgeKey = config.getAPIKey("curseforge");
 		if(!curseforgeKey){
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
 			return;

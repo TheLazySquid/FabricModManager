@@ -1,0 +1,5279 @@
+{
+  "pagination": {
+    "index": 0,
+    "pageSize": 50,
+    "resultCount": 50,
+    "totalCount": 68
+  },
+  "data": [
+    {
+      "client": {},
+      "id": 4167734,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.3-v1.19.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.3-v1.19.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "c1abb72f7d8b4b00370bc6e8512ff89c81d89755",
+          "algo": 1
+        },
+        {
+          "value": "6d59de4cc3ce7dcb16332f56e216e0de",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-12-12T17:03:56.337Z",
+      "fileLength": 537475,
+      "downloadCount": 17975,
+      "downloadUrl": "https://edge.forgecdn.net/files/4167/734/NoChatReports-FABRIC-1.19.3-v1.19.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 912017910,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 418302059
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2382735263
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 1290840241
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1786281698
+        },
+        {
+          "name": "assets",
+          "fingerprint": 367419679
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2698532517
+        },
+        {
+          "name": "com",
+          "fingerprint": 2643145042
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4142186,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.3-v1.18.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.3-v1.18.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "303d10d9eef23c8ed1af632d25c17d7231e334e9",
+          "algo": 1
+        },
+        {
+          "value": "974a2a161378c06c45a596bc234dfa83",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-12-07T16:44:32.527Z",
+      "fileLength": 534262,
+      "downloadCount": 4633,
+      "downloadUrl": "https://edge.forgecdn.net/files/4142/186/NoChatReports-FABRIC-1.19.3-v1.18.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 139352465,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1372259646
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2216573598
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3180914273
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1214153602
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3705085958
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 59839149
+        },
+        {
+          "name": "com",
+          "fingerprint": 2606362123
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4133354,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.3-pre3-v1.17.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.3-pre3-v1.17.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "461f96ad2a01f5842b96e7d2165da9cb28eceeda",
+          "algo": 1
+        },
+        {
+          "value": "01ad07ba0bca8cff570ac6374055da71",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-12-04T11:24:38.657Z",
+      "fileLength": 528967,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4133/354/NoChatReports-FABRIC-1.19.3-pre3-v1.17.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 996825606,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 3483990308
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2216573598
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3180914273
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2369567741
+        },
+        {
+          "name": "assets",
+          "fingerprint": 632672334
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4253881725
+        },
+        {
+          "name": "com",
+          "fingerprint": 2155620032
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4110137,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.3-pre2-v1.16.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.3-pre2-v1.16.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "0d11f6092d6b77adb949d8057df667d05e41ea98",
+          "algo": 1
+        },
+        {
+          "value": "21964a5a56ace242b87a0ed078df8832",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-24T15:17:21.743Z",
+      "fileLength": 518994,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4110/137/NoChatReports-FABRIC-1.19.3-pre2-v1.16.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1912880074,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 3877392806
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2216573598
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3180914273
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3288371055
+        },
+        {
+          "name": "assets",
+          "fingerprint": 754586620
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4253881725
+        },
+        {
+          "name": "com",
+          "fingerprint": 2074569190
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4092745,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w46a-v1.15.0.jar",
+      "fileName": "NoChatReports-FABRIC-22w46a-v1.15.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "26bcc86551c45ae930e09b429a9a66879b9c4a7e",
+          "algo": 1
+        },
+        {
+          "value": "24425bc57ca2c81ab1b43d664687e281",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-17T17:04:49.167Z",
+      "fileLength": 512393,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4092/745/NoChatReports-FABRIC-22w46a-v1.15.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2947498876,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2934962754
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2216573598
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3180914273
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1395762546
+        },
+        {
+          "name": "assets",
+          "fingerprint": 757979250
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4253881725
+        },
+        {
+          "name": "com",
+          "fingerprint": 1420066794
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4082460,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.12.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.12.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "298232cc392f0240191ea62c9cd4d2ff4a99ba97",
+          "algo": 1
+        },
+        {
+          "value": "83d9f024137a4fb645ee00bc20a8b9e1",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-12T14:24:11.107Z",
+      "fileLength": 533396,
+      "downloadCount": 210405,
+      "downloadUrl": "https://edge.forgecdn.net/files/4082/460/NoChatReports-FABRIC-1.19.2-v1.13.12.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 28658570,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 379778512
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2246646600
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3317514073
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 817319478
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4082456,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.2-v1.5.1.jar",
+      "fileName": "NoChatReports-FORGE-1.19.2-v1.5.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "476312ba20f6da0a9d4a21b874e41d7efe719d2f",
+          "algo": 1
+        },
+        {
+          "value": "05dcb9bf88cd31a942ea8b686ddca0de",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-12T14:18:27.030Z",
+      "fileLength": 204615,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4082/456/NoChatReports-FORGE-1.19.2-v1.5.1.jar",
+      "gameVersions": [
+        "1.19.2",
+        "Forge"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3734896824,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2171848353
+        },
+        {
+          "name": "com",
+          "fingerprint": 388728721
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3317514073
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 1370693566
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2762346335
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 2172459643
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4073008,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w44a-v1.14.4.jar",
+      "fileName": "NoChatReports-FABRIC-22w44a-v1.14.4.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "c582516f7673ac8620e8565c63315247640ab21b",
+          "algo": 1
+        },
+        {
+          "value": "d9d607d453085ac5d556c627a833dbc7",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-07T16:56:23.667Z",
+      "fileLength": 518461,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4073/8/NoChatReports-FABRIC-22w44a-v1.14.4.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1471671344,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4022762292
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 1367860254
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 4223773430
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1704180370
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1872913514
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4140448421
+        },
+        {
+          "name": "com",
+          "fingerprint": 2726388542
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4066802,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w44a-v1.14.3.jar",
+      "fileName": "NoChatReports-FABRIC-22w44a-v1.14.3.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "f77bfa98e44b8490668a9d3ff22ba6a92927b948",
+          "algo": 1
+        },
+        {
+          "value": "e9e15f655aa02be82f19e95ba5937c33",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-04T18:28:55.727Z",
+      "fileLength": 516711,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4066/802/NoChatReports-FABRIC-22w44a-v1.14.3.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 125433504,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4022762292
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 1367860254
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 4223773430
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 27737145
+        },
+        {
+          "name": "assets",
+          "fingerprint": 835183785
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4140448421
+        },
+        {
+          "name": "com",
+          "fingerprint": 3316161624
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4066594,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w44a-v1.14.2.jar",
+      "fileName": "NoChatReports-FABRIC-22w44a-v1.14.2.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "df08b2f04fd72882e546fbf48be129267c47f112",
+          "algo": 1
+        },
+        {
+          "value": "5a4f96ef7bfd60639a31d8570f917312",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-04T15:38:21.950Z",
+      "fileLength": 515753,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4066/594/NoChatReports-FABRIC-22w44a-v1.14.2.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3330124679,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4022762292
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2897887863
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 4223773430
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 4281459132
+        },
+        {
+          "name": "assets",
+          "fingerprint": 835183785
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4151676394
+        },
+        {
+          "name": "com",
+          "fingerprint": 3602106159
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4066482,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w44a-v1.14.1.jar",
+      "fileName": "NoChatReports-FABRIC-22w44a-v1.14.1.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "ea8d67878d72ed0f30d51d3ed18b83a4215149dd",
+          "algo": 1
+        },
+        {
+          "value": "5f6317c0d97a9ae4da02e0ead2983ba8",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-04T14:05:16.540Z",
+      "fileLength": 515707,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4066/482/NoChatReports-FABRIC-22w44a-v1.14.1.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 601361088,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4022762292
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2897887863
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 4223773430
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2765096368
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2089004156
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4151676394
+        },
+        {
+          "name": "com",
+          "fingerprint": 3602106159
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4065300,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-22w44a-v1.14.0.jar",
+      "fileName": "NoChatReports-FABRIC-22w44a-v1.14.0.jar",
+      "releaseType": 2,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "9edeb1371ed31b87c22cea0dbf07096985ac0cbb",
+          "algo": 1
+        },
+        {
+          "value": "605a951aed80e440ab4ef06603ceba1f",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-11-03T15:50:52.663Z",
+      "fileLength": 507637,
+      "downloadCount": 8,
+      "downloadUrl": "https://edge.forgecdn.net/files/4065/300/NoChatReports-FABRIC-22w44a-v1.14.0.jar",
+      "gameVersions": [
+        "1.19.3",
+        "Fabric",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.3",
+          "gameVersionPadded": "0000000001.0000000019.0000000003",
+          "gameVersion": "1.19.3",
+          "gameVersionReleaseDate": "2022-10-19T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1022407472,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 3587757307
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2317463790
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 4223773430
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2965785405
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1299782466
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1262450774
+        },
+        {
+          "name": "com",
+          "fingerprint": 814090019
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4056445,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.11.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.11.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "6f6f1d4e6f82fad21308acd2680cfed1570b283c",
+          "algo": 1
+        },
+        {
+          "value": "caef6732445571d3338be824c5a25021",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-29T13:50:10.737Z",
+      "fileLength": 527512,
+      "downloadCount": 128111,
+      "downloadUrl": "https://edge.forgecdn.net/files/4056/445/NoChatReports-FABRIC-1.19.2-v1.13.11.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 467148893,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 379778512
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 301728481
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3255411952
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 516331608
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4055536,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.2-v1.5.0.jar",
+      "fileName": "NoChatReports-FORGE-1.19.2-v1.5.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "5e84064f6e66bc5ddeee0b465b98c53e9f78c4ee",
+          "algo": 1
+        },
+        {
+          "value": "67682faf7e3ff69e5aed915e1edc0f4b",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-28T21:36:19.937Z",
+      "fileLength": 198200,
+      "downloadCount": 411,
+      "downloadUrl": "https://edge.forgecdn.net/files/4055/536/NoChatReports-FORGE-1.19.2-v1.5.0.jar",
+      "gameVersions": [
+        "1.19.2",
+        "Forge"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3265400070,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1763902444
+        },
+        {
+          "name": "com",
+          "fingerprint": 2081674130
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3255411952
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 25969327
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2762346335
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 2172459643
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4049615,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.10.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.10.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "6764430324dd1ad16990810ab9649aae43a5647e",
+          "algo": 1
+        },
+        {
+          "value": "ccbaf6124c150f8e0def238e9b801420",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-25T09:10:12.590Z",
+      "fileLength": 527604,
+      "downloadCount": 2987,
+      "downloadUrl": "https://edge.forgecdn.net/files/4049/615/NoChatReports-FABRIC-1.19.2-v1.13.10.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1259102352,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 379778512
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 4050939302
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3255411952
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 2608249847
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4022522,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.9.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.9.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "ad273539ea39ad166cf6b0ea9830e1768ecadbba",
+          "algo": 1
+        },
+        {
+          "value": "0639681c608673f54a5b9c468dad074b",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-09T01:34:28.797Z",
+      "fileLength": 500476,
+      "downloadCount": 152431,
+      "downloadUrl": "https://edge.forgecdn.net/files/4022/522/NoChatReports-FABRIC-1.19.2-v1.13.9.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3316695438,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3048384542
+        },
+        {
+          "name": "assets",
+          "fingerprint": 295541746
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 238690118
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4020183,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.8.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.8.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "f2cdcf09cff1c9b0323f118e48511e572da17502",
+          "algo": 1
+        },
+        {
+          "value": "40138031cf0dbe21a10a9e60c22bc5bf",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-06T20:22:29.087Z",
+      "fileLength": 492874,
+      "downloadCount": 1730,
+      "downloadUrl": "https://edge.forgecdn.net/files/4020/183/NoChatReports-FABRIC-1.19.2-v1.13.8.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3756158612,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 493516358
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3042385340
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 2350198293
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4020030,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.7.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.7.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "0ce9308a8723a8f738de1d767a6bdd17abcdeda0",
+          "algo": 1
+        },
+        {
+          "value": "48223dfc4946b161814d635298e30336",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-06T17:32:54.593Z",
+      "fileLength": 492922,
+      "downloadCount": 124,
+      "downloadUrl": "https://edge.forgecdn.net/files/4020/30/NoChatReports-FABRIC-1.19.2-v1.13.7.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 242424526,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2727168592
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3988368189
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3042385340
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4181868691
+        },
+        {
+          "name": "com",
+          "fingerprint": 1190366103
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4019296,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.6.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.6.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "31578b57d2c872bc0451448935d1a985876efe7a",
+          "algo": 1
+        },
+        {
+          "value": "3c04c6c40a526a10addfe19c8078b51d",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-10-05T21:38:26.080Z",
+      "fileLength": 488081,
+      "downloadCount": 551,
+      "downloadUrl": "https://edge.forgecdn.net/files/4019/296/NoChatReports-FABRIC-1.19.2-v1.13.6.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 4155240403,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1076027104
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3774298915
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2094665007
+        },
+        {
+          "name": "com",
+          "fingerprint": 3868685166
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4010812,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.5.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.5.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "dd7d8890c0d09d800d9f23005f546d773a66bb46",
+          "algo": 1
+        },
+        {
+          "value": "7d0e479c7e3e22189fe9293fd3c240f6",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-28T18:54:16.287Z",
+      "fileLength": 474636,
+      "downloadCount": 52416,
+      "downloadUrl": "https://edge.forgecdn.net/files/4010/812/NoChatReports-FABRIC-1.19.2-v1.13.5.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 852629127,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 311658192
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 1791051374
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4010695,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.4.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.4.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "291c0ad54a0a3994891e50f11f5909a10d1e53c8",
+          "algo": 1
+        },
+        {
+          "value": "0d17ddf7c14556be8a358b138071ba00",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-28T17:07:48.657Z",
+      "fileLength": 474738,
+      "downloadCount": 150,
+      "downloadUrl": "https://edge.forgecdn.net/files/4010/695/NoChatReports-FABRIC-1.19.2-v1.13.4.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1762482802,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1584920228
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 3465031428
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4010631,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.3.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.3.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "4428edb0881bfc44eb2c9ebdde96877910f48a8d",
+          "algo": 1
+        },
+        {
+          "value": "967edd8a33b637194bfa0ec2a5826adc",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-28T16:02:33.010Z",
+      "fileLength": 474093,
+      "downloadCount": 48,
+      "downloadUrl": "https://edge.forgecdn.net/files/4010/631/NoChatReports-FABRIC-1.19.2-v1.13.3.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2109432480,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2846897058
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 3037826329
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4009421,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.2.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "12eed504f3739cd55a7fe890315141bfaccadac3",
+          "algo": 1
+        },
+        {
+          "value": "c13316ba2e3608449ebae91131af8a1b",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-27T11:36:47.427Z",
+      "fileLength": 474104,
+      "downloadCount": 765,
+      "downloadUrl": "https://edge.forgecdn.net/files/4009/421/NoChatReports-FABRIC-1.19.2-v1.13.2.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3326257173,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2145488603
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 3614697312
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4009397,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "7ad35e831552d5a8916de7b7d7dc2de1efd69cb8",
+          "algo": 1
+        },
+        {
+          "value": "5ba73838f33cdfdc766f85ddf88d2b79",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-27T11:14:41.860Z",
+      "fileLength": 473764,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/4009/397/NoChatReports-FABRIC-1.19.2-v1.13.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3872977639,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 3101958246
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3815030085
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 335599082
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 4007470,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.13.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.13.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "50b6f5343b8f89172fa75cbd98933a75dd34b289",
+          "algo": 1
+        },
+        {
+          "value": "24226c2e13cf270b1d1222affd6629ed",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-25T19:26:23.193Z",
+      "fileLength": 472374,
+      "downloadCount": 2509,
+      "downloadUrl": "https://edge.forgecdn.net/files/4007/470/NoChatReports-FABRIC-1.19.2-v1.13.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1101161055,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3356824334
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2014485074
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 394755641
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2090782285
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3737876393
+        },
+        {
+          "name": "com",
+          "fingerprint": 2666994096
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3990248,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.12.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.12.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "ebb50f927ca4226505aeee90d020e6a04afa5215",
+          "algo": 1
+        },
+        {
+          "value": "36251dd4f839c04c925e1b5bc4c8c5e4",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-15T10:31:28.040Z",
+      "fileLength": 423384,
+      "downloadCount": 77963,
+      "downloadUrl": "https://edge.forgecdn.net/files/3990/248/NoChatReports-FABRIC-1.19.2-v1.12.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1286315490,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3192248553
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2001473002
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 4236757503
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2252706445
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2989944744
+        },
+        {
+          "name": "com",
+          "fingerprint": 276734022
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3963436,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.11.2.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.11.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "213dc0c361ed71ac560810fc2ab00fab74f08aa6",
+          "algo": 1
+        },
+        {
+          "value": "055c6e754f1b904b046b25c90ba529e4",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-09-02T10:10:52.090Z",
+      "fileLength": 414099,
+      "downloadCount": 121899,
+      "downloadUrl": "https://edge.forgecdn.net/files/3963/436/NoChatReports-FABRIC-1.19.2-v1.11.2.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 556729495,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3192248553
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 378967211
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3593820879
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2989944744
+        },
+        {
+          "name": "com",
+          "fingerprint": 2053765450
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3958543,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.11.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.11.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "534c91a56218f6c87205eef0ff5e0f884cad33e6",
+          "algo": 1
+        },
+        {
+          "value": "f4b19fde2989be2badb62461a120b2dd",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-30T11:58:08.250Z",
+      "fileLength": 413469,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3958/543/NoChatReports-FABRIC-1.19.2-v1.11.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 308702,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1474893161,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3192248553
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 4087450509
+        },
+        {
+          "name": "assets",
+          "fingerprint": 453671252
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2989944744
+        },
+        {
+          "name": "com",
+          "fingerprint": 1992568420
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3958469,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.11.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.11.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "71a933195d5ad61ccb6888fc28d211317f9ac873",
+          "algo": 1
+        },
+        {
+          "value": "f46a384d3c61da9fe76cf190562a2446",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-30T10:51:27.627Z",
+      "fileLength": 412294,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3958/469/NoChatReports-FABRIC-1.19.2-v1.11.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2440811593,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3192248553
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3771747089
+        },
+        {
+          "name": "assets",
+          "fingerprint": 453671252
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2989944744
+        },
+        {
+          "name": "com",
+          "fingerprint": 4188813990
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3952674,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.10.2.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.10.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "58e3d2f58abeb12e30cb5c20023649b17c348519",
+          "algo": 1
+        },
+        {
+          "value": "e37e0eb05b78436862e09e2cec4a94e3",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-26T11:59:17.023Z",
+      "fileLength": 395405,
+      "downloadCount": 4882,
+      "downloadUrl": "https://edge.forgecdn.net/files/3952/674/NoChatReports-FABRIC-1.19.2-v1.10.2.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 348521,
+          "relationType": 2
+        },
+        {
+          "modId": 306612,
+          "relationType": 1
+        },
+        {
+          "modId": 308702,
+          "relationType": 2
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 314785610,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3003170977
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1976081490
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2671616975
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 823711666
+        },
+        {
+          "name": "com",
+          "fingerprint": 3173171126
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3940075,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.10.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.10.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "131940dff79cf01a60fdab15807b9a831ac73b17",
+          "algo": 1
+        },
+        {
+          "value": "1e28c87002e2bdf24f1c8b316ac968e0",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-18T01:43:23.483Z",
+      "fileLength": 390883,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3940/75/NoChatReports-FABRIC-1.19.2-v1.10.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2076872083,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3003170977
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 990353312
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3521885422
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 823711666
+        },
+        {
+          "name": "com",
+          "fingerprint": 2907872600
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3939918,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.10.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.10.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "faf020550ffee6e5d5598ff7cbd36f82951d0324",
+          "algo": 1
+        },
+        {
+          "value": "b1df423dcac81eba36379abbd48cf121",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-17T23:19:24.973Z",
+      "fileLength": 390607,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3939/918/NoChatReports-FABRIC-1.19.2-v1.10.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 1
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2815352769,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2751437682
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3003170977
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2981491866
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3521885422
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 823711666
+        },
+        {
+          "name": "com",
+          "fingerprint": 2992645213
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3926379,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.9.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.9.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "2598b3859ae3c6277a3ab999b4c301271b8bce43",
+          "algo": 1
+        },
+        {
+          "value": "8612239daff4f61721faae7bedf5d004",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-09T13:31:35.997Z",
+      "fileLength": 85141,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3926/379/NoChatReports-FABRIC-1.19.2-v1.9.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2735653313,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2704682901
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3003170977
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 366196858
+        },
+        {
+          "name": "assets",
+          "fingerprint": 488542970
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 823711666
+        },
+        {
+          "name": "com",
+          "fingerprint": 2180662036
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3926371,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.2-v1.4.0.jar",
+      "fileName": "NoChatReports-FORGE-1.19.2-v1.4.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "ea759d249178f502ba8503dcc331cb5b29c6b6bb",
+          "algo": 1
+        },
+        {
+          "value": "b910b8397573c54f12036cb3d02965b5",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-09T13:24:31.787Z",
+      "fileLength": 83960,
+      "downloadCount": 504,
+      "downloadUrl": "https://edge.forgecdn.net/files/3926/371/NoChatReports-FORGE-1.19.2-v1.4.0.jar",
+      "gameVersions": [
+        "1.19.2",
+        "Forge"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 4032369300,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 256956193
+        },
+        {
+          "name": "com",
+          "fingerprint": 3022643941
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3119516405
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 3801279256
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 2367605698
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 3305158930
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3926172,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.1-v1.3.3.jar",
+      "fileName": "NoChatReports-FORGE-1.19.1-v1.3.3.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "f17fbc7e4b0c4ab4fe046385313f1202befb78f3",
+          "algo": 1
+        },
+        {
+          "value": "7322e930b4c6325c84033ab48d05d6f7",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-09T10:32:40.193Z",
+      "fileLength": 86581,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3926/172/NoChatReports-FORGE-1.19.1-v1.3.3.jar",
+      "gameVersions": [
+        "Forge",
+        "1.19.1"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 542872971,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1380933006
+        },
+        {
+          "name": "com",
+          "fingerprint": 3942240585
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 2000815532
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3957280889
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 2058987118
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3923024,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.2-v1.9.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.2-v1.9.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "75c3064b8233b19623667a2d1048502d3b1234bf",
+          "algo": 1
+        },
+        {
+          "value": "47fda7437c2f46c26d7fbc6bb5589509",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-07T13:29:40.037Z",
+      "fileLength": 84797,
+      "downloadCount": 172,
+      "downloadUrl": "https://edge.forgecdn.net/files/3923/24/NoChatReports-FABRIC-1.19.2-v1.9.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.2",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.2",
+          "gameVersionPadded": "0000000001.0000000019.0000000002",
+          "gameVersion": "1.19.2",
+          "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 898347240,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 2704682901
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3003170977
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3559869765
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1006121790
+        },
+        {
+          "name": "assets",
+          "fingerprint": 3119516405
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 2503002288
+        },
+        {
+          "name": "com",
+          "fingerprint": 2036115514
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3920599,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.1-v1.3.2.jar",
+      "fileName": "NoChatReports-FORGE-1.19.1-v1.3.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "f787f1d39ad2e514b3672590fe6d0713554f5058",
+          "algo": 1
+        },
+        {
+          "value": "6c9ba1dc3443ce63f25887d48b8fa028",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-06T04:30:49.373Z",
+      "fileLength": 83207,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3920/599/NoChatReports-FORGE-1.19.1-v1.3.2.jar",
+      "gameVersions": [
+        "Forge",
+        "1.19.1"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2135929983,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 3019019737
+        },
+        {
+          "name": "com",
+          "fingerprint": 3053721732
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 4005674293
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3713787861
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 2087199573
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3920598,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.8.4.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.8.4.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "f8852f5cd647b4e02f43b0a8e76a57da19ed4faf",
+          "algo": 1
+        },
+        {
+          "value": "151424a852090c16c7dc5f7f13663eb4",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-06T04:27:06.463Z",
+      "fileLength": 87825,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3920/598/NoChatReports-FABRIC-1.19.1-v1.8.4.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1623663563,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 828181529
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3615549702
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 688881655
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3983149164
+        },
+        {
+          "name": "com",
+          "fingerprint": 1468524148
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3919277,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.1-v1.3.1.jar",
+      "fileName": "NoChatReports-FORGE-1.19.1-v1.3.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "50d86803a7c60eb750aeadcc6ae1e6a43336d658",
+          "algo": 1
+        },
+        {
+          "value": "3f88baac84b3da478119b1b8e9b0d625",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-05T11:36:43.213Z",
+      "fileLength": 83160,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3919/277/NoChatReports-FORGE-1.19.1-v1.3.1.jar",
+      "gameVersions": [
+        "Forge",
+        "1.19.1"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3259506912,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 298728059
+        },
+        {
+          "name": "com",
+          "fingerprint": 1721426616
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 3935140579
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3713787861
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 2087199573
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3919273,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.8.3.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.8.3.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "fd11dc451d882d804ed20613e7390ac37055d9e4",
+          "algo": 1
+        },
+        {
+          "value": "f631d62febdfa231f6b1f1f35ddf8d2a",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-08-05T11:31:41.767Z",
+      "fileLength": 87808,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3919/273/NoChatReports-FABRIC-1.19.1-v1.8.3.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2352104473,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3615549702
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 905610096
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3983149164
+        },
+        {
+          "name": "com",
+          "fingerprint": 4012556781
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3908839,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FORGE-1.19.1-v1.3.0.jar",
+      "fileName": "NoChatReports-FORGE-1.19.1-v1.3.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "68daee83097e8afb252fa04c612e1a194ffdbae9",
+          "algo": 1
+        },
+        {
+          "value": "c1ddc7c455be4873042ed7bbf4fb9f38",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-31T00:29:33.530Z",
+      "fileLength": 83131,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3908/839/NoChatReports-FORGE-1.19.1-v1.3.0.jar",
+      "gameVersions": [
+        "Forge",
+        "1.19.1"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Forge",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        }
+      ],
+      "dependencies": [],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3176280595,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 3196757278
+        },
+        {
+          "name": "com",
+          "fingerprint": 260722500
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1775356361
+        },
+        {
+          "name": "changelog.html",
+          "fingerprint": 495389146
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3713787861
+        },
+        {
+          "name": "pack.mcmeta",
+          "fingerprint": 2996549802
+        },
+        {
+          "name": "nochatreports.refmap.json",
+          "fingerprint": 544021543
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3908043,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.8.2.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.8.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "2acac459a00721a873232e3492815a0e8d5bf01d",
+          "algo": 1
+        },
+        {
+          "value": "7bacd1d97a50aa3e2cd652043e808ba6",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-30T16:38:55.070Z",
+      "fileLength": 88064,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3908/43/NoChatReports-FABRIC-1.19.1-v1.8.2.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 3153607606,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3615549702
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2927191218
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2079345080
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1021105267
+        },
+        {
+          "name": "com",
+          "fingerprint": 997908075
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3907569,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.8.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.8.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "688939927e22c5d75797851a7eb2b45844feb6cc",
+          "algo": 1
+        },
+        {
+          "value": "18d22e32a509bd9b4d3bc402b7332e3b",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-30T14:23:40.837Z",
+      "fileLength": 88032,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3907/569/NoChatReports-FABRIC-1.19.1-v1.8.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 1342854308,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3615549702
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 3247830801
+        },
+        {
+          "name": "assets",
+          "fingerprint": 36112900
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1021105267
+        },
+        {
+          "name": "com",
+          "fingerprint": 997908075
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3907413,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.8.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.8.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "cb2da59eadca787b990efe2375f12942d98de5b2",
+          "algo": 1
+        },
+        {
+          "value": "3e41402ebd259e2d8033ec3cce054f69",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-30T11:53:56.020Z",
+      "fileLength": 88039,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3907/413/NoChatReports-FABRIC-1.19.1-v1.8.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2155609824,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 3615549702
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 2324434373
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2081301654
+        },
+        {
+          "name": "assets",
+          "fingerprint": 36112900
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1021105267
+        },
+        {
+          "name": "com",
+          "fingerprint": 2497869844
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3905982,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.7.2.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.7.2.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "a63cbc95041cb8bace01e4029b0a7fa7b1667ad7",
+          "algo": 1
+        },
+        {
+          "value": "015e335e1c746b8af5d6654a08483d71",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-29T15:20:38.467Z",
+      "fileLength": 85902,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3905/982/NoChatReports-FABRIC-1.19.1-v1.7.2.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2421402655,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 1580866736
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2202425186
+        },
+        {
+          "name": "assets",
+          "fingerprint": 2129993640
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1021105267
+        },
+        {
+          "name": "com",
+          "fingerprint": 3273594615
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3902863,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.7.1.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.7.1.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "02d9e0aaa1bd33310f878db0853881a3b54b3f1f",
+          "algo": 1
+        },
+        {
+          "value": "18f25d8a91f0d555d62977d4b774aea5",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-27T21:50:28.840Z",
+      "fileLength": 80968,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3902/863/NoChatReports-FABRIC-1.19.1-v1.7.1.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 375222128,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 925010046
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 1970356491
+        },
+        {
+          "name": "assets",
+          "fingerprint": 298272048
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4004576405
+        },
+        {
+          "name": "com",
+          "fingerprint": 3712273155
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3902690,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-v1.7.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-v1.7.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "3aeebc40659e0d61c7aa959d1f86cd1a0b83f3ed",
+          "algo": 1
+        },
+        {
+          "value": "871947d5dbe6dd310d1d4f9a98b1db7b",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-27T20:12:12.903Z",
+      "fileLength": 80948,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3902/690/NoChatReports-FABRIC-1.19.1-v1.7.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2110102089,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 1239602902
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 925010046
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 654457645
+        },
+        {
+          "name": "assets",
+          "fingerprint": 298272048
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4004576405
+        },
+        {
+          "name": "com",
+          "fingerprint": 1858055942
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3892293,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-rc2-v1.6.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-rc2-v1.6.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "888a55eb749ce388ab9762e5ad2845e5308a831e",
+          "algo": 1
+        },
+        {
+          "value": "ddaef0bbb8bfb6d9ae8dd59f2eaec1df",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-22T13:42:48.233Z",
+      "fileLength": 79295,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3892/293/NoChatReports-FABRIC-1.19.1-rc2-v1.6.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 2900265274,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 985317238
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 925010046
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 4216603632
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1790462239
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 4004576405
+        },
+        {
+          "name": "com",
+          "fingerprint": 2762247091
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3882043,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-pre3-v1.5.0.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-pre3-v1.5.0.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "52a38a6c4adde49795cc717449e859c5b60274ba",
+          "algo": 1
+        },
+        {
+          "value": "4b05c8326e3f4f73cef7379d71764d77",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-18T10:31:34.000Z",
+      "fileLength": 76000,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3882/43/NoChatReports-FABRIC-1.19.1-pre3-v1.5.0.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 920678107,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4045248674
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 1645169140
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 2075760794
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1790462239
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 1242586448
+        },
+        {
+          "name": "com",
+          "fingerprint": 4190272828
+        }
+      ]
+    },
+    {
+      "client": {},
+      "id": 3872601,
+      "gameId": 432,
+      "modId": 634062,
+      "isAvailable": true,
+      "displayName": "NoChatReports-FABRIC-1.19.1-pre3-v1.4.3.jar",
+      "fileName": "NoChatReports-FABRIC-1.19.1-pre3-v1.4.3.jar",
+      "releaseType": 1,
+      "fileStatus": 4,
+      "hashes": [
+        {
+          "value": "a1bca09e51b2010d523307046c564c157207f5ac",
+          "algo": 1
+        },
+        {
+          "value": "0c85b464795bbe13287c32a36a70351d",
+          "algo": 2
+        }
+      ],
+      "fileDate": "2022-07-12T20:27:39.463Z",
+      "fileLength": 75779,
+      "downloadCount": 0,
+      "downloadUrl": "https://edge.forgecdn.net/files/3872/601/NoChatReports-FABRIC-1.19.1-pre3-v1.4.3.jar",
+      "gameVersions": [
+        "Fabric",
+        "1.19.1",
+        "Quilt"
+      ],
+      "sortableGameVersions": [
+        {
+          "gameVersionName": "Fabric",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2019-08-01T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        },
+        {
+          "gameVersionName": "1.19.1",
+          "gameVersionPadded": "0000000001.0000000019.0000000001",
+          "gameVersion": "1.19.1",
+          "gameVersionReleaseDate": "2022-06-28T00:00:00.000Z",
+          "gameVersionTypeId": 73407
+        },
+        {
+          "gameVersionName": "Quilt",
+          "gameVersionPadded": "0",
+          "gameVersion": "",
+          "gameVersionReleaseDate": "2022-05-26T00:00:00.000Z",
+          "gameVersionTypeId": 68441
+        }
+      ],
+      "dependencies": [
+        {
+          "modId": 306612,
+          "relationType": 3
+        }
+      ],
+      "alternateFileId": 0,
+      "isServerPack": false,
+      "fileFingerprint": 100835363,
+      "modules": [
+        {
+          "name": "META-INF",
+          "fingerprint": 4045248674
+        },
+        {
+          "name": "LICENSE",
+          "fingerprint": 4062509488
+        },
+        {
+          "name": "nochatreports.mixins.json",
+          "fingerprint": 1645169140
+        },
+        {
+          "name": "nochatreports.accesswidener",
+          "fingerprint": 344568784
+        },
+        {
+          "name": "NCR_logo.png",
+          "fingerprint": 3971817192
+        },
+        {
+          "name": "fabric.mod.json",
+          "fingerprint": 976497672
+        },
+        {
+          "name": "assets",
+          "fingerprint": 1790462239
+        },
+        {
+          "name": "NoChatReports-FABRIC-refmap.json",
+          "fingerprint": 3138518496
+        },
+        {
+          "name": "com",
+          "fingerprint": 3169988528
+        }
+      ]
+    }
+  ]
+}

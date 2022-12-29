@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-import { getConfigValue, setConfigValue, updateMod } from "./config.js";
+import { config } from "./config.js";
 import chalk from "chalk";
 import fs from 'fs';
 import { confirmUnusedExists } from "./utils.js";
@@ -12,8 +12,8 @@ export class Mod{
 		this.slug = slug
 		this.id = id
 		this.title = title
-		this.activeVersionIndex = null
 		this.disabled = false
+		this.activeVersionIndex = null
 
 		this.versions = []
 	}
@@ -24,11 +24,11 @@ export class Mod{
 	}
 
 	async updateVersion(){
-		const gameVersion = getConfigValue("version");
-		const loader = getConfigValue("loader");
+		const gameVersion = config.activeProfile.version;
+		const loader = config.activeProfile.loader;
 
 		if(!gameVersion){
-			console.log(chalk.red("Error: ") + "No Minecraft version set. You can set the minecraft version with 'fmm version -v <version>'");
+			console.log(chalk.red("Error: ") + "No Minecraft version set. You can set the minecraft version with 'fmm version <version>'");
 			return null;
 		}
 		// check if we already have a version for this game version and loader
@@ -53,14 +53,14 @@ export class Mod{
 		// add the version to the versions array without the dependencies
 		this.versions.push(version);
 
-		updateMod(this);
+		config.updateMod(this);
 		
 		return this.versions.length - 1;
 	}
 
 	async installVersion(force){
 		if(!this.activeVersion) return;
-		const modDir = getConfigValue("modDir");
+		const modDir = config.getConfigValue("modDir");
 
 		// make sure the mod directory exists
 		if(modDir == null){
@@ -114,10 +114,12 @@ export class Mod{
 		}
 
 		// make sure the mod directory exists
-		confirmUnusedExists();
+		if(!confirmUnusedExists()){
+			return;
+		}
 
 		// swap out the old file, if it exists
-		const modDir = getConfigValue("modDir");
+		const modDir = config.getConfigValue("modDir");
 		if(modDir == null){
 			console.log(chalk.red("Error: ") + "Mod directory not set. Use 'fmm moddir -p <path>' to set it.");
 			return;
@@ -142,50 +144,77 @@ export class Mod{
 		}
 
 		// update the config file
-		updateMod(this);
+		config.updateMod(this);
 	}
 
 	delete(){
-		const modDir = getConfigValue("modDir");
+		const modDir = config.getConfigValue("modDir");
 		if(modDir == null){
 			console.log(chalk.red("Error: ") + "Mod directory not set. Use 'fmm moddir -p <path>' to set it.");
 			return;
 		}
 
-		// delete the mod's files for all versions
-		for(let version of this.versions){
-			// check whether the version is active
-			if(version == this.activeVersion){
-				// delete the active version
-				if(fs.existsSync(modDir + "\\" + version.fileName)){
-					fs.rmSync(modDir + "\\" + version.fileName);
-				}
-			}else{
-				// delete the inactive version
-				if(fs.existsSync(modDir + "\\fmm_unused\\" + version.fileName)){
-					fs.rmSync(modDir + "\\fmm_unused\\" + version.fileName);
+		// check if the mod is being used in any inactive profiles
+		let profiles = config.loadProfiles();
+		let activeProfileIndex = config.getConfigValue("activeProfileIndex");
+		let usedInInactiveProfile = false;
+		for(let i = 0; i < profiles.length; i++){
+			if(i == activeProfileIndex) continue;
+			let profile = profiles[i];
+			for(let mod of profile.mods){
+				if(mod.id == this.id){
+					usedInInactiveProfile = true;
+					break;
 				}
 			}
 		}
 
-		// remove the mod from the config file
-		let mods = getConfigValue("mods");
-		if(mods == null) return;
-		let index = mods.findIndex((mod) => mod.id == this.id);
-		if(index == -1) return;
-		mods.splice(index, 1);
-		setConfigValue("mods", mods);
+		// remove this from the active profile
+		config.activeProfile.removeMod(this);
+
+		if(!usedInInactiveProfile){
+			// delete the mod's files for all versions
+			for(let version of this.versions){
+				// check whether the version is active
+				if(version == this.activeVersion){
+					// delete the active version
+					if(fs.existsSync(modDir + "\\" + version.fileName)){
+						fs.rmSync(modDir + "\\" + version.fileName);
+					}
+				}else{
+					// delete the inactive version
+					if(fs.existsSync(modDir + "\\fmm_unused\\" + version.fileName)){
+						fs.rmSync(modDir + "\\fmm_unused\\" + version.fileName);
+					}
+				}
+			}
+			// remove the mod from the config file
+			let mods = config.getConfigValue("mods");
+			if(mods == null) return;
+			let index = mods.findIndex((mod) => mod.id == this.id);
+			if(index == -1) return;
+			mods.splice(index, 1);
+			config.setConfigValue("mods", mods);
+		}else{
+			// just move the active version to the unused folder
+			if(this.activeVersion){
+				if(fs.existsSync(modDir + "\\" + this.activeVersion.fileName)){
+					fs.renameSync(modDir + "\\" + this.activeVersion.fileName,
+					modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
+				}
+			}
+		}
 
 		console.log(chalk.green("Success: ") + `${this.title} deleted successfully.`);
 	}
 
 	disable(){
-		confirmUnusedExists();
-		const modDir = getConfigValue("modDir");
+		const modDir = config.getConfigValue("modDir");
 		if(modDir == null){
 			console.log(chalk.red("Error: ") + "Mod directory not set. Use 'fmm moddir -p <path>' to set it.");
 			return;
 		}
+		confirmUnusedExists();
 
 		// move the active version to the unused folder
 		if(this.activeVersion){
@@ -198,12 +227,13 @@ export class Mod{
 		this.disabled = true;
 
 		// update the config file
-		updateMod(this);
+		config.updateMod(this);
 	}
 
 	enable(){
-		const modDir = getConfigValue("modDir");
-		const version = getConfigValue("version");
+		const modDir = config.getConfigValue("modDir");
+		const version = config.activeProfile.version;
+		const loader = config.activeProfile.loader;
 		if(modDir == null){
 			console.log(chalk.red("Error: ") + "Mod directory not set. Use 'fmm moddir -p <path>' to set it.");
 			return;
@@ -211,8 +241,9 @@ export class Mod{
 
 		this.disabled = false;
 
-		// swap in a version that is compatible with the current game version
-		let index = this.versions.findIndex((modVer) => modVer.game_versions.includes(version));
+		// swap in a version that is compatible with the current game version and loader
+		let index = this.versions.findIndex((modVer) => modVer.game_versions.includes(version) && 
+			modVer.loader == loader);
 		if(index == -1) return;
 		this.swapVersion(index);
 	}

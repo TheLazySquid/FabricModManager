@@ -1,42 +1,58 @@
 import chalk from "chalk";
-import { getConfigValue } from "./config.js";
+import { config } from "./config.js";
 import { loadMods } from "./utils.js";
 import { curseforge } from "./moddbs/curseforge.js";
 import { modrinth } from "./moddbs/modrinth.js";
 import { inquirer } from "./index.js";
 
 export async function installModrinthMod(modID){
+	let mods = config.activeProfile.loadMods();
 	// check if the mod is already installed
-	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
+	let existingMod = mods.find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
 	if(existingMod){
 		console.log(chalk.red("Error: ") + `${existingMod.title} is already installed.`);
 		return;
 	}
 
 	let mod = await modrinth.getMod(modID);
-	// update and install the mod
-	let index = await mod.updateVersion()
-	mod.swapVersion(index);
+	if(!mod){
+		console.log(chalk.red("Error: ") + "Mod not found.");
+		return;
+	}
+
+	await addMod(mod);
 }
 
 export async function installCurseForgeMod(modID){
+	let mods = config.activeProfile.loadMods();
 	// check if the mod is already installed
-	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
+	let existingMod = mods.find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
 	if(existingMod){
 		console.log(chalk.red("Error: ") + `${existingMod.title} is already installed.`);
 		return;
 	}
 
 	let mod = await curseforge.getMod(modID);
+	if(!mod){
+		console.log(chalk.red("Error: ") + "Mod not found.");
+		return;
+	}
 
+	await addMod(mod);
+}
+
+async function addMod(mod){
 	// install and update the mod
 	let index = await mod.updateVersion();
+	if(index == null) return;
 	mod.swapVersion(index);
+
+	config.activeProfile.addMod(mod);
 }
 
 export async function searchAllPlatforms(modID){
 	// check if the mod is already installed
-	let existingMod = getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
+	let existingMod = config.getConfigValue("mods").find((mod) => mod.slug == modID.toLowerCase() || mod.id == modID)
 	if(existingMod){
 		console.log(chalk.red("Error: ") + `${existingMod.title} is already installed.`);
 		return;	
@@ -85,9 +101,7 @@ export async function searchAllPlatforms(modID){
 		}
 	}
 
-	// install and update the mod
-	let index = await mod.updateVersion();
-	mod.swapVersion(index);
+	await addMod(mod);
 }
 
 export function triggerModFunction(query, functionName, ...args){
