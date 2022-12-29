@@ -8,11 +8,8 @@ To install FMM, you can download or clone this reposiory. Then, open a terminal 
 
 ## Setup
 
-To get started using FMM, you need to set the directory where mods will be downloaded to. This will probably look like
-
-`fmm moddir -p "C:\Users\<name>\AppData\Roaming\.minecraft\mods"`
-
-You can then start installing mods with `fmm install`
+To get started using FMM, you need to specify a version of Minecraft to use, by running `fmm version [version]>`. FMM defaults to using Fabric, but you can change that with `fmm loader [loader]`. You can then download mods with `fmm install -q <modID/slug>`.
+More in-depth explanations of the commands can be found below.
 
 ## Commands
 
@@ -53,7 +50,7 @@ fmm moddir -p "C:\Users\<name>\AppData\Roaming\.minecraft\mods"
 
 Returns an ASCII table of all installed mods.
 
-### `fmm version -v <version>`
+### `fmm version [version]`
 
 Updates the version of Minecraft to use for mod installation. Automatically updates all mods to the set minecraft version. An example of this command would look like this:
 
@@ -87,3 +84,12 @@ fmm enable -q no-chat-reports
 ### `fmm reinstall -q <modID/slug>`
 
 Reinstalls a mod, in case it was missing or otherwise broken.
+
+### `fmm profile <action>`
+
+Allows you to easily swap between different profiles, which are just different sets of mods.
+
+#### `fmm profile create <name>`
+
+Creates a new profile with the given name.
+

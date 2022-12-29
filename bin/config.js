@@ -20,6 +20,8 @@ export let config = {
 		// if no active profile is set, return null
 		let profiles = this.getConfigValue("profiles");
 		if(!profiles) return null;
+
+		if(index == null || index >= profiles.length) return null;
 		
 		// return the active profile
 		let profile = profiles[index];
@@ -144,5 +146,32 @@ export let config = {
 		// enable the new profile
 		this.activeProfile.enable();
 		console.log(chalk.green("Profile successfully switched."));
+	},
+	deleteProfile(name){
+		let profiles = this.getConfigValue("profiles");
+		if(!profiles) profiles = [];
+	
+		let profileIndex = profiles.findIndex((profile) => profile.name == name);
+		if(profileIndex == -1){
+			console.log(chalk.red("Error: ") + "Profile does not exist.");
+			return;
+		}
+	
+		// remove the profile
+		profiles.splice(profileIndex, 1);
+	
+		// save the profiles
+		this.setConfigValue("profiles", profiles);
+	
+		// if the deleted profile was the active profile, swap to the first profile
+		if(profiles.length > 0){
+			if(profileIndex == this.getConfigValue("activeProfileIndex")){
+				this.setConfigValue("activeProfileIndex", 0);
+			}
+			console.log("Switched to profile " + profiles[0]?.name);
+		}else{
+			this.setConfigValue("activeProfileIndex", null);
+			console.log("No profiles left.");
+		}
 	}
 }

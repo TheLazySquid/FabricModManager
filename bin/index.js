@@ -305,6 +305,11 @@ yargs(hideBin(process.argv))
 				}
 			})
 			console.table(profiles);
+		}else if(argv.action == "delete"){
+			let deleteName = argv.name ?? config.activeProfile.name;
+			config.activeProfile.triggerModFunction("all", "delete");
+			config.deleteProfile(deleteName);
+			console.log(chalk.green("Deleted profile: ") + deleteName);
 		}else{
 			console.log(chalk.red("Error: ") + "Invalid action specified.");
 		}
