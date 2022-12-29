@@ -93,3 +93,14 @@ Allows you to easily swap between different profiles, which are just different s
 
 Creates a new profile with the given name.
 
+#### `fmm profile delete [name]`
+
+Deletes a profile with the given name. If no name is given, it will delete the current profile.
+
+#### `fmm profile switch <name>`
+
+Switches to the profile with the given name.
+
+#### `fmm profile list`
+
+Lists all profiles.
