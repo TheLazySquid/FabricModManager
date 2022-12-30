@@ -32,10 +32,10 @@ fmm uninstall -q no-chat-reports
 
 ### `fmm key <platform> <key>`
 
-Sets an API key for a platform. Right now, this is only neccesary for Curseforge. You can obtain a curseforge api key [here](https://console.curseforge.com/#/api-keys). An example of this command would look like this:
+Sets an API key for a platform. Right now, this is only neccesary for Curseforge. You can obtain a curseforge api key [here](https://console.curseforge.com/#/api-keys). You should surround your key in single quotes, to avoid issues with fmm misreading what the key is. An example of this command would look like this:
 
 ```bash
-fmm key curseforge [your_epic_key_here]
+fmm key curseforge 'your_epic_key_here'
 ```
 
 ### `fmm moddir -p <path>`
