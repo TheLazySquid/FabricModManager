@@ -2,6 +2,7 @@ import { config } from "./config.js";
 import { Mod } from "./mod.js";
 import fs from 'fs';
 import chalk from "chalk";
+import { join } from "path";
 
 export function loadMods(){
 	let mods = config.getConfigValue("mods") ?? [];
@@ -23,6 +24,6 @@ export function confirmUnusedExists(){
 		console.log(chalk.red("Error: ") + "Mod directory not set. You can set it with 'fmm moddir -p <path>'");
 		return null;
 	}
-	fs.existsSync(modDir + "\\fmm_unused") || fs.mkdirSync(modDir + "\\fmm_unused");
+	fs.existsSync(join(modDir, "fmm_unused")) || fs.mkdirSync(join(modDir + "fmm_unused"));
 	return modDir;
 }

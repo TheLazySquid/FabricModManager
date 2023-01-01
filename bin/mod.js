@@ -5,6 +5,7 @@ import fs from 'fs';
 import { confirmUnusedExists } from "./utils.js";
 import { modrinth } from "./moddbs/modrinth.js";
 import { curseforge } from "./moddbs/curseforge.js";
+import { join } from "path";
 
 export class Mod{
 	constructor(site, slug, id, title){
@@ -65,7 +66,6 @@ export class Mod{
 	async installVersion(force){
 		if(!this.activeVersion) return;
 		if(this.manuallyAdded) return null;
-		console.log(this.title)
 		const modDir = config.getConfigValue("modDir");
 
 		// make sure the mod directory exists
@@ -77,13 +77,13 @@ export class Mod{
 		confirmUnusedExists();
 
 		// check if the mod is already installed
-		let unusedExists = fs.existsSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
-		let usedExists = fs.existsSync(modDir + "\\" + this.activeVersion.fileName)
+		let unusedExists = fs.existsSync(join(modDir, "fmm_unused", this.activeVersion.fileName));
+		let usedExists = fs.existsSync(join(modDir, this.activeVersion.fileName))
 		if(unusedExists || usedExists){
 			if(force){
 				// delete it if force is enabled
-				if(unusedExists) fs.rmSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
-				if(usedExists) fs.rmSync(modDir + "\\" + this.activeVersion.fileName);
+				if(unusedExists) fs.rmSync(join(modDir, "fmm_unused", this.activeVersion.fileName));
+				if(usedExists) fs.rmSync(join(modDir, this.activeVersion.fileName));
 			}else{
 				return;
 			}
@@ -91,7 +91,7 @@ export class Mod{
 
 		// download the mod
 		let data = await fetch(this.activeVersion.url)
-		const dest = fs.createWriteStream(modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
+		const dest = fs.createWriteStream(join(modDir, "fmm_unused", this.activeVersion.fileName));
 		data.body.pipe(dest);
 
 		// the above doesn't run synchronously, so we need to wait for the file to be written
@@ -129,9 +129,9 @@ export class Mod{
 		}
 
 		if(this.activeVersion){
-			if(fs.existsSync(modDir + "\\" + this.activeVersion.fileName)){
+			if(fs.existsSync(join(modDir, this.activeVersion.fileName))){
 				// move the old file to the unused folder
-				fs.renameSync(modDir + "\\" + this.activeVersion.fileName, modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
+				fs.renameSync(join(modDir, this.activeVersion.fileName), join(modDir, "fmm_unused", this.activeVersion.fileName));
 			}
 		}
 
@@ -139,8 +139,8 @@ export class Mod{
 		this.activeVersionIndex = index;
 		if(index == null) return;
 
-		if(fs.existsSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName)){
-			fs.renameSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName, modDir + "\\" + this.activeVersion.fileName);
+		if(fs.existsSync(join(modDir, "fmm_unused", this.activeVersion.fileName))){
+			fs.renameSync(join(modDir, "fmm_unused", this.activeVersion.fileName), join(modDir, this.activeVersion.fileName));
 		}else{
 			// install the version and then swap it in
 			await this.installVersion(true);
@@ -182,13 +182,13 @@ export class Mod{
 				// check whether the version is active
 				if(version == this.activeVersion){
 					// delete the active version
-					if(fs.existsSync(modDir + "\\" + version.fileName)){
-						fs.rmSync(modDir + "\\" + version.fileName);
+					if(fs.existsSync(join(modDir, version.fileName))){
+						fs.rmSync(join(modDir, version.fileName));
 					}
 				}else{
 					// delete the inactive version
-					if(fs.existsSync(modDir + "\\fmm_unused\\" + version.fileName)){
-						fs.rmSync(modDir + "\\fmm_unused\\" + version.fileName);
+					if(fs.existsSync(join(modDir, "fmm_unused", version.fileName))){
+						fs.rmSync(join(modDir, "fmm_unused", version.fileName));
 					}
 				}
 			}
@@ -202,9 +202,9 @@ export class Mod{
 		}else{
 			// just move the active version to the unused folder
 			if(this.activeVersion){
-				if(fs.existsSync(modDir + "\\" + this.activeVersion.fileName)){
-					fs.renameSync(modDir + "\\" + this.activeVersion.fileName,
-					modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
+				if(fs.existsSync(join(modDir, this.activeVersion.fileName))){
+					fs.renameSync(join(modDir, this.activeVersion.fileName),
+					join(modDir, "fmm_unused", this.activeVersion.fileName));
 				}
 			}
 		}
@@ -222,9 +222,9 @@ export class Mod{
 
 		// move the active version to the unused folder
 		if(this.activeVersion){
-			if(fs.existsSync(modDir + "\\" + this.activeVersion.fileName)){
-				fs.renameSync(modDir + "\\" + this.activeVersion.fileName,
-				modDir + "\\fmm_unused\\" + this.activeVersion.fileName);
+			if(fs.existsSync(join(modDir, this.activeVersion.fileName))){
+				fs.renameSync(join(modDir, this.activeVersion.fileName),
+				join(modDir, "fmm_unused", this.activeVersion.fileName));
 			}
 		}
 

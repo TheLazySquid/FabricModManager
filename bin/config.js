@@ -1,11 +1,11 @@
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { dirname, join} from 'path';
+import { dirname, join } from 'path';
 import { Profile } from './profile.js';
 import chalk from 'chalk';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const configFile = join(__dirname, "../") + "\\fmmconfig.json";
+const configFile = join(__dirname, "../", "fmmconfig.json");
 
 const defaultConfigValues = {
 	loader: "fabric",

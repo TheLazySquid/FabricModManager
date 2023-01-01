@@ -6,6 +6,7 @@ import { createCustomMod, installCurseForgeMod, installModrinthMod, searchAllPla
 import chalk from "chalk";
 
 import inquirer from "inquirer";
+import { join } from "path";
 
 // export inquirer for use in other files
 export { inquirer };
@@ -101,13 +102,14 @@ yargs(hideBin(process.argv))
 			let files = fs.readdirSync(oldModDir);
 			for(let file of files){
 				if(file.endsWith(".jar")){
-					fs.renameSync(oldModDir + "/" + file, argv.path + "/" + file);
+					fs.renameSync(join(oldModDir, file), join(argv.path, file));
 				}
 			}
 
 			// move the fmm_unused folder
-			if(fs.existsSync(oldModDir + "\\fmm_unused")){
-				fs.renameSync(oldModDir + "\\fmm_unused", argv.path + "\\fmm_unused");
+			let unusedDir = join(oldModDir, "fmm_unused");
+			if(fs.existsSync(unusedDir)){
+				fs.renameSync(unusedDir, join(argv.path, "fmm_unused"));
 			}
 			console.log(chalk.green("Mod directory set to: " + argv.path));
 		}else{

@@ -1,7 +1,7 @@
 {
   "name": "fmm",
   "version": "0.4.0",
-  "description": "A command line tool for managing fabric mods",
+  "description": "A command line tool for managing minecraft mods",
   "main": "bin/index.js",
   "type": "module",
   "author": "TheLazySquid",
