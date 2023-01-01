@@ -104,3 +104,7 @@ Switches to the profile with the given name.
 #### `fmm profile list`
 
 Lists all profiles.
+
+#### `fmm profile rename <name>`
+
+Renames the current profile to the given name.

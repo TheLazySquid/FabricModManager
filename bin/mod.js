@@ -14,6 +14,7 @@ export class Mod{
 		this.title = title
 		this.disabled = false
 		this.activeVersionIndex = null
+		this.manuallyAdded = false
 
 		this.versions = []
 	}
@@ -37,6 +38,9 @@ export class Mod{
 		if(existingIndex != -1){
 			return existingIndex;
 		}
+		
+		// don't try to update a manually added mod
+		if(this.manuallyAdded) return null;
 
 		let version;
 		switch(this.site.toLowerCase()){
@@ -60,6 +64,8 @@ export class Mod{
 
 	async installVersion(force){
 		if(!this.activeVersion) return;
+		if(this.manuallyAdded) return null;
+		console.log(this.title)
 		const modDir = config.getConfigValue("modDir");
 
 		// make sure the mod directory exists
@@ -107,16 +113,13 @@ export class Mod{
 			return;
 		}
 
-		if(index == null) return;
 		if(index >= this.versions.length){
 			console.log(chalk.red("Error: ") + "Invalid version index.");
 			return;
 		}
 
 		// make sure the mod directory exists
-		if(!confirmUnusedExists()){
-			return;
-		}
+		if(!confirmUnusedExists()) return;
 
 		// swap out the old file, if it exists
 		const modDir = config.getConfigValue("modDir");
@@ -134,6 +137,7 @@ export class Mod{
 
 		// swap in the version we want
 		this.activeVersionIndex = index;
+		if(index == null) return;
 
 		if(fs.existsSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName)){
 			fs.renameSync(modDir + "\\fmm_unused\\" + this.activeVersion.fileName, modDir + "\\" + this.activeVersion.fileName);

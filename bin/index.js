@@ -2,9 +2,8 @@ import yargs from "yargs";
 import fs from "fs";
 import { hideBin } from "yargs/helpers";
 import { config } from "./config.js";
-import { installCurseForgeMod, installModrinthMod, searchAllPlatforms, triggerModFunction } from "./manager.js";
+import { createCustomMod, installCurseForgeMod, installModrinthMod, searchAllPlatforms, triggerModFunction } from "./manager.js";
 import chalk from "chalk";
-import { loadMods } from "./utils.js";
 
 import inquirer from "inquirer";
 
@@ -281,38 +280,57 @@ yargs(hideBin(process.argv))
 			console.log(chalk.red("Error: ") + "No action specified.");
 			return;
 		}
-		if(argv.action == "create"){
-			if(!argv.name){
-				console.log(chalk.red("Error: ") + "No name specified.");
-				return;
-			}
-			config.createProfile(argv.name, argv.version, argv.loader);
-		}else if(argv.action == "switch"){
-			if(!argv.name){
-				console.log(chalk.red("Error: ") + "No name specified.");
-				return;
-			}
-			config.switchProfile(argv.name);
-		}else if(argv.action == "list"){
-			let profiles = config.loadProfiles();
-			profiles = profiles.map((profile) => {
-				return {
-					name: profile.name,
-					version: profile.version,
-					loader: profile.loader,
-					active: profile.name == config.activeProfile.name,
-					"Amount of Mods": profile.mods.length
+		switch(argv.action.toLowerCase()){
+			case "create":
+				if(!argv.name){
+					console.log(chalk.red("Error: ") + "No name specified.");
+					return;
 				}
-			})
-			console.table(profiles);
-		}else if(argv.action == "delete"){
-			let deleteName = argv.name ?? config.activeProfile.name;
-			config.activeProfile.triggerModFunction("all", "delete");
-			config.deleteProfile(deleteName);
-			console.log(chalk.green("Deleted profile: ") + deleteName);
-		}else{
-			console.log(chalk.red("Error: ") + "Invalid action specified.");
+				config.createProfile(argv.name, argv.version, argv.loader);
+				break;
+			case "switch":
+				if(!argv.name){
+					console.log(chalk.red("Error: ") + "No name specified.");
+					return;
+				}
+				config.switchProfile(argv.name);
+				break;
+			case "list":
+				let profiles = config.loadProfiles();
+				profiles = profiles.map((profile) => {
+					return {
+						name: profile.name,
+						version: profile.version,
+						loader: profile.loader,
+						active: profile.name == config.activeProfile.name,
+						"Amount of Mods": profile.mods.length
+					}
+				})
+				console.table(profiles);
+				break;
+			case "delete":
+				let deleteName = argv.name ?? config.activeProfile.name;
+				config.activeProfile.triggerModFunction("all", "delete");
+				config.deleteProfile(deleteName);
+				console.log(chalk.green("Deleted profile: ") + deleteName);
+				break;
+			case "rename":
+				if(!argv.name){
+					console.log(chalk.red("Error: ") + "No name specified.");
+					return;
+				}
+				config.activeProfile.rename(argv.name);
+				break;
+			default:
+				console.log(chalk.red("Error: ") + "Invalid action specified.");
 		}
+	}
+})
+.command({
+	command: "addmod <filename> <name> <ver> <loader>",
+	describe: "Add a mod to fmm that isn't found on CurseForge or Modrinth",
+	handler: (argv) => {
+		createCustomMod(argv.filename, argv.name, argv.ver, argv.loader);
 	}
 })
 .demandCommand()

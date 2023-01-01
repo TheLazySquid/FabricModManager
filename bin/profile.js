@@ -38,6 +38,7 @@ export class Profile{
 			newMod.versions = mod.versions;
 			newMod.activeVersionIndex = mod.activeVersionIndex;
 			newMod.disabled = mod.disabled;
+			newMod.manuallyAdded = mod.manuallyAdded;
 
 			mod.disabledOnThisProfile = this.mods.find(m => m.id == mod.id).disabled;
 
@@ -104,5 +105,11 @@ export class Profile{
 		if(!mod) return;
 		mod[funcName]();
 		config.updateMod(mod);
+	}
+	rename(newName){
+		let oldName = this.name;
+		this.name = newName;
+		config.updateProfile(this, oldName);
+		console.log(chalk.green(`Renamed profile ${oldName} to ${newName}`));
 	}
 }

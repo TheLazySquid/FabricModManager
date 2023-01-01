@@ -88,12 +88,12 @@ export let config = {
 	
 		return keys[site] ?? null;
 	},
-	updateProfile(profile){
+	updateProfile(profile, customName = null){
 		var profiles = this.getConfigValue("profiles");
 		if(!profiles) profiles = [];
 
 		// check if the profile is already in the config
-		let profileIndex = profiles.findIndex((p) => p.name == profile.name);
+		let profileIndex = profiles.findIndex((p) => p.name == (customName ?? profile.name));
 		if(profileIndex != -1){
 			// overwrite the profile
 			profiles[profileIndex] = profile;

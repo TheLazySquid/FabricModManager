@@ -4,6 +4,7 @@ import { loadMods } from "./utils.js";
 import { curseforge } from "./moddbs/curseforge.js";
 import { modrinth } from "./moddbs/modrinth.js";
 import { inquirer } from "./index.js";
+import { Mod } from "./mod.js";
 
 export async function installModrinthMod(modID){
 	let mods = config.activeProfile.loadMods();
@@ -123,4 +124,25 @@ export function triggerModFunction(query, functionName, ...args){
 	}
 
 	mod[functionName]();
+}
+
+export function createCustomMod(fileName, name, version, loader){
+	// check if the mod already exists
+	let existingMod = config.getConfigValue("mods").find((mod) => mod.slug == name.toLowerCase() || mod.id == name)
+	let mod;
+	if(existingMod){
+		mod = existingMod;
+	}else{
+		mod = new Mod("custom", name, name, name);
+		mod.activeVersionIndex = 0;
+	}
+	mod.manuallyAdded = true;
+	mod.versions.push({
+		loader: loader,
+		game_versions: [version],
+		fileName: fileName,
+		url: null
+	})
+	config.updateMod(mod);
+	if(!existingMod) config.activeProfile.addMod(mod);
 }
