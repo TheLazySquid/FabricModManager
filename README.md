@@ -108,3 +108,11 @@ Lists all profiles.
 #### `fmm profile rename <name>`
 
 Renames the current profile to the given name.
+
+### `addmod <filename> <name> <version> <loader>`
+
+Manually adds a mod to be used that can't be found on Modrinth or Curseforge. This is useful for mods such as Replay Mod, which can only be found on their website. An example of this command would look like this:
+
+```bash
+fmm addmod 'replaymod-1.19.3-2.6.10.jar' 'Replay Mod' 1.19.3 fabric
+```
