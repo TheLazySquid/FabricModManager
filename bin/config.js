@@ -57,7 +57,7 @@ export let config = {
 		fs.writeFileSync(configFile, JSON.stringify(config, null, 4));
 	},
 	updateMod(mod){
-		var mods = this.getConfigValue("mods");
+		let mods = this.getConfigValue("mods");
 		if(!mods) mods = [];
 	
 		// check if the mod is already in the config
@@ -74,7 +74,7 @@ export let config = {
 		this.setConfigValue("mods", mods);
 	},
 	setAPIKey(site, key){
-		var keys = this.getConfigValue("keys");
+		let keys = this.getConfigValue("keys");
 		if(!keys) keys = {};
 	
 		keys[site] = key;
@@ -83,13 +83,13 @@ export let config = {
 		console.log(chalk.green(`${site} API key successfully updated to ${key}`))
 	},
 	getAPIKey(site){
-		var keys = this.getConfigValue("keys");
+		let keys = this.getConfigValue("keys");
 		if(!keys) keys = {};
 	
 		return keys[site] ?? null;
 	},
 	updateProfile(profile, customName = null){
-		var profiles = this.getConfigValue("profiles");
+		let profiles = this.getConfigValue("profiles");
 		if(!profiles) profiles = [];
 
 		// check if the profile is already in the config

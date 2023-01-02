@@ -5,7 +5,7 @@ import chalk from "chalk";
 import { installModrinthMod } from "../manager.js";
 import { Mod } from "../mod.js";
 
-export var modrinth = {
+export let modrinth = {
 	names: [
 		"modrinth",
 		"mr",
@@ -13,8 +13,8 @@ export var modrinth = {
 	],
 	async getVersion(mod, gameVersion, loader){
 		// get the mod's versions
-		var res = await fetch(`https://api.modrinth.com/v2/project/${mod.id}/version`)
-		var data = await res.text()
+		let res = await fetch(`https://api.modrinth.com/v2/project/${mod.id}/version`)
+		let data = await res.text()
 		try{
 			data = JSON.parse(data);
 		}catch(e){
@@ -58,7 +58,7 @@ export var modrinth = {
 				return {
 					name: dependency.title + ` (${dep_type})`,
 					value: dependency.id,
-					checked: !(dep_type == "optional")
+					checked: dep_type != "optional"
 				}
 			})
 			// remove null values
@@ -99,8 +99,8 @@ export var modrinth = {
 		return mod;
 	},
 	async search(query){
-		var res = await fetch(`https://api.modrinth.com/v2/search?query=${query}&type=mod`)
-		var data = await res.text()
+		let res = await fetch(`https://api.modrinth.com/v2/search?query=${query}&type=mod`)
+		let data = await res.text()
 		try{
 			data = JSON.parse(data);
 		}catch(e){

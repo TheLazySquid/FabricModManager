@@ -3,9 +3,8 @@ import { config } from '../config.js';
 import chalk from 'chalk';
 import fetch from "node-fetch";
 import { Mod } from '../mod.js';
-import fs from 'fs';
 
-export var curseforge = {
+export let curseforge = {
 	names: [
 		"curseforge",
 		"cf",
@@ -17,7 +16,7 @@ export var curseforge = {
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
 			return;
 		}
-		var client = new CurseForgeClient(curseforgeKey, {fetch});
+		let client = new CurseForgeClient(curseforgeKey, {fetch});
 
 		let loaderID;
 		switch(loader.toLowerCase()){
@@ -60,12 +59,12 @@ export var curseforge = {
 			console.log(chalk.red("You need to add a curseforge api key with 'fmm key' before you can download mods"));
 			return;
 		}
-		var client = new CurseForgeClient(curseforgeKey, {fetch});
+		let client = new CurseForgeClient(curseforgeKey, {fetch});
 
 		let modData;
 		if(isNaN(parseInt(modID))){
 			// the modID is a slug
-			var modResults = await client.searchMods(CurseForgeGameEnum.Minecraft, {slug: modID});
+			let modResults = await client.searchMods(CurseForgeGameEnum.Minecraft, {slug: modID});
 			// remove any modpacks
 			modResults = modResults.data.filter(m => !m.links.websiteUrl.includes("/modpacks/"))
 			if(modResults.length == 0){
